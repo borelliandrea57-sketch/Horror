@@ -1,0 +1,6102 @@
+{
+  "station": {
+    "name": "Binario della Stazione · Dùsterbedragna",
+    "w": 34,
+    "h": 23,
+    "style": "station",
+    "blocks": [
+      [
+        0,
+        0,
+        34,
+        7
+      ],
+      [
+        0,
+        7,
+        5,
+        2
+      ],
+      [
+        26.5,
+        7,
+        7.5,
+        4.1
+      ],
+      [
+        0,
+        16.5,
+        6.8,
+        6.5
+      ],
+      [
+        26.6,
+        18.8,
+        7.4,
+        4.2
+      ]
+    ],
+    "doors": [
+      {
+        "x": 17,
+        "y": 8,
+        "label": "Portone chiuso della Stazione Centrale",
+        "to": "sala",
+        "spawn": [
+          13,
+          15
+        ],
+        "id": "stationhall",
+        "interactArea": [
+          15.5,
+          8,
+          3.8,
+          2.7
+        ]
+      }
+    ],
+    "npcs": [
+      {
+        "x": 15,
+        "y": 10,
+        "id": "stationmaster",
+        "name": "Il Capostazione",
+        "portrait": "portrait_stationmaster"
+      }
+    ],
+    "props": [
+      {
+        "id": "station_fountain",
+        "name": "Fontana delle Tre Madri",
+        "note": "La pietra è coperta di una sostanza scura. Tre volti piegati verso l’acqua fissano il tuo riflesso, ma uno di loro sbatte le palpebre.",
+        "paintOnly": true,
+        "interactArea": [
+          15.5,
+          12.2,
+          7.7,
+          5.1
+        ],
+        "footprint": [
+          16.3,
+          12.8,
+          6.0,
+          4.0
+        ],
+        "kind": "monument"
+      },
+      {
+        "id": "s_bench_left",
+        "name": "Panchina del binario",
+        "note": "Il legno ha conservato la forma di un corpo. Sotto le assi sono state incise date tutte uguali.",
+        "paintOnly": true,
+        "interactArea": [
+          4.1,
+          9.1,
+          3.4,
+          1.8
+        ],
+        "footprint": [
+          4.2,
+          9.5,
+          3,
+          1.2
+        ],
+        "kind": "inspect"
+      },
+      {
+        "id": "s_bench_middle",
+        "name": "Panchina senza viaggiatori",
+        "note": "Un segno di unghie attraversa il sedile. Finisce prima del bordo, come se la mano fosse scomparsa.",
+        "paintOnly": true,
+        "interactArea": [
+          9.7,
+          10.2,
+          3.9,
+          2.4
+        ],
+        "footprint": [
+          10.1,
+          10.9,
+          3.5,
+          1.5
+        ],
+        "kind": "inspect"
+      },
+      {
+        "id": "s_bench_right",
+        "name": "Panchina dimenticata",
+        "note": "Sulla stoffa abbandonata si legge un nome ricamato al rovescio.",
+        "paintOnly": true,
+        "interactArea": [
+          21.2,
+          10.5,
+          3.5,
+          2
+        ],
+        "footprint": [
+          21.2,
+          11,
+          3.5,
+          1.1
+        ],
+        "kind": "inspect"
+      },
+      {
+        "id": "s_market",
+        "name": "Bancarella chiusa",
+        "note": "Il telo è gonfio di umidità; le bottiglie sono disposte per altezza come una famiglia in posa.",
+        "paintOnly": true,
+        "interactArea": [
+          1.1,
+          11.5,
+          6.2,
+          4.7
+        ],
+        "footprint": [
+          1.4,
+          12.6,
+          6,
+          3.5
+        ],
+        "kind": "inspect"
+      },
+      {
+        "id": "s_notice",
+        "name": "Bacheca degli arrivi",
+        "note": "Le notizie sono state incollate una sopra l’altra. Un manifesto reca la data di domani e il tuo volto.",
+        "paintOnly": true,
+        "interactArea": [
+          22,
+          5.6,
+          3.1,
+          2
+        ],
+        "footprint": null,
+        "kind": "inspect"
+      },
+      {
+        "id": "s_luggage",
+        "name": "Valigia chiusa",
+        "note": "La pelle è fredda, ma dalla serratura proviene un rumore simile a unghie sui denti.",
+        "paintOnly": true,
+        "interactArea": [
+          5.5,
+          6.2,
+          2.8,
+          1.9
+        ],
+        "footprint": [
+          5.8,
+          6.8,
+          2.2,
+          1.1
+        ],
+        "kind": "luggage"
+      },
+      {
+        "id": "s_cart",
+        "name": "Valigia chiusa sul carrello",
+        "note": "La valigia è legata al carrello con una corda nuova. Le ruote hanno lasciato fango sulla pietra asciutta.",
+        "paintOnly": true,
+        "interactArea": [
+          19.4,
+          6.1,
+          3.1,
+          3
+        ],
+        "footprint": [
+          19.5,
+          6.8,
+          2.9,
+          2.0
+        ],
+        "kind": "luggage"
+      },
+      {
+        "id": "s_clock",
+        "name": "Orologio fermo",
+        "note": "Le lancette non avanzano. La lancetta dei secondi sembra però respirare.",
+        "paintOnly": true,
+        "interactArea": [
+          24.4,
+          7.55,
+          2.2,
+          1.4
+        ],
+        "footprint": null,
+        "kind": "inspect"
+      },
+      {
+        "id": "s_lamp_left",
+        "name": "Lampione della piazzola",
+        "note": "La fiamma si agita senza vento. Il palo è caldo come un osso appena spezzato.",
+        "paintOnly": true,
+        "interactArea": [
+          7.8,
+          9,
+          1.6,
+          5.1
+        ],
+        "footprint": [
+          7.5,
+          10.8,
+          1,
+          3.1
+        ],
+        "kind": "inspect"
+      },
+      {
+        "id": "s_lamp_right",
+        "name": "Lampione del muro",
+        "note": "La luce illumina il selciato, ma nessun volto vi proietta un’ombra.",
+        "paintOnly": true,
+        "interactArea": [
+          26.65,
+          10.6,
+          2.0,
+          3.1
+        ],
+        "footprint": [
+          27.3,
+          12.0,
+          0.9,
+          1.05
+        ],
+        "kind": "inspect"
+      },
+      {
+        "id": "s_barrel",
+        "name": "Barile della bancarella",
+        "note": "L’interno odora di pane vecchio e umidità.",
+        "paintOnly": true,
+        "interactArea": [
+          8.9,
+          14.1,
+          1.7,
+          2
+        ],
+        "footprint": [
+          9,
+          14.7,
+          1.4,
+          1
+        ],
+        "kind": "barrel"
+      },
+      {
+        "id": "barrel_station_02",
+        "name": "Barile del carico",
+        "note": "Una scritta è stata grattata via dal coperchio.",
+        "paintOnly": true,
+        "interactArea": [
+          11.1,
+          16.1,
+          1.7,
+          2
+        ],
+        "footprint": [
+          11.48,
+          17.5,
+          1.05,
+          0.76
+        ],
+        "kind": "barrel"
+      },
+      {
+        "id": "barrel_station_03",
+        "name": "Barile del magazzino",
+        "note": "Qualcuno ha sigillato il tappo usando cera rossa.",
+        "paintOnly": true,
+        "interactArea": [
+          15.1,
+          17.5,
+          1.8,
+          1.6
+        ],
+        "footprint": [
+          15.0,
+          18.65,
+          1.03,
+          0.8
+        ],
+        "kind": "barrel"
+      },
+      {
+        "id": "barrel_station_04",
+        "name": "Barile del sottoscala",
+        "note": "Dalla fenditura esce un odore di sale e ferro.",
+        "paintOnly": true,
+        "interactArea": [
+          16.9,
+          17.7,
+          1.5,
+          1.5
+        ],
+        "footprint": [
+          16.95,
+          18.65,
+          1.05,
+          0.8
+        ],
+        "kind": "barrel"
+      },
+      {
+        "id": "s_crate",
+        "name": "Cassa della ferrovia",
+        "note": "La cassa è crepata verso l’esterno, come se qualcosa avesse cercato di uscire.",
+        "paintOnly": true,
+        "interactArea": [
+          13.2,
+          15.9,
+          2.2,
+          2
+        ],
+        "footprint": [
+          13.25,
+          17.5,
+          1.85,
+          0.85
+        ],
+        "kind": "crate"
+      },
+      {
+        "id": "s_fence",
+        "name": "Inferriata del cortile",
+        "note": "Il ferro è piegato verso la città, come se qualcosa avesse cercato di rientrare.",
+        "paintOnly": true,
+        "interactArea": [
+          3,
+          18.4,
+          6,
+          2
+        ],
+        "footprint": [
+          3.1,
+          18.8,
+          5.8,
+          1.2
+        ],
+        "kind": "inspect"
+      },
+      {
+        "id": "station_refuse_bin",
+        "name": "Bidone dei rifiuti della stazione",
+        "note": "Il metallo odora di ruggine, polvere bagnata e medicinali scaduti.",
+        "paintOnly": true,
+        "interactArea": [
+          10.45,
+          6.45,
+          1.45,
+          2.6
+        ],
+        "footprint": [
+          10.55,
+          7.5,
+          1.35,
+          1.15
+        ],
+        "kind": "refuse"
+      }
+    ],
+    "enemies": [],
+    "sceneryBlocks": [
+      [
+        10.85,
+        17.0,
+        0.8,
+        0.35
+      ],
+      [
+        10.75,
+        17.85,
+        0.9,
+        0.45
+      ],
+      [
+        12.75,
+        18.65,
+        1.5,
+        0.85
+      ],
+      [
+        14.1,
+        19.05,
+        0.85,
+        0.75
+      ],
+      [
+        16.25,
+        19.05,
+        0.65,
+        0.45
+      ],
+      [
+        16.25,
+        18.35,
+        0.7,
+        0.4
+      ]
+    ],
+    "polygons": [
+      [
+        [
+          9.9,
+          20.3
+        ],
+        [
+          12.5,
+          20.3
+        ],
+        [
+          15.0,
+          22.7
+        ],
+        [
+          15.0,
+          23
+        ],
+        [
+          9.9,
+          23
+        ]
+      ],
+      [
+        [
+          20.8,
+          19.4
+        ],
+        [
+          26.6,
+          19.4
+        ],
+        [
+          26.6,
+          23
+        ],
+        [
+          19.3,
+          23
+        ],
+        [
+          19.5,
+          21.5
+        ]
+      ]
+    ]
+  },
+  "sala": {
+    "name": "Atrio della Stazione Centrale · Dùsterbedragna",
+    "w": 26,
+    "h": 18,
+    "style": "sala",
+    "blocks": [
+      [
+        0,
+        0,
+        26,
+        3
+      ],
+      [
+        0,
+        3,
+        1.35,
+        14
+      ],
+      [
+        24.7,
+        3,
+        1.3,
+        14
+      ],
+      [
+        0,
+        17,
+        26,
+        1
+      ],
+      [
+        5.75,
+        3.05,
+        4.3,
+        2.65
+      ],
+      [
+        1.65,
+        3.35,
+        2.8,
+        2.55
+      ],
+      [
+        15.55,
+        4.75,
+        3.2,
+        1.18
+      ],
+      [
+        16.1,
+        3.55,
+        2.6,
+        1.55
+      ],
+      [
+        21.3,
+        2.4,
+        3.4,
+        3.9
+      ],
+      [
+        2.4,
+        8.35,
+        1.35,
+        1.25
+      ],
+      [
+        2.2,
+        10.2,
+        1.35,
+        1.35
+      ],
+      [
+        4.4,
+        10.2,
+        1.2,
+        1.4
+      ],
+      [
+        4.65,
+        11.65,
+        1.3,
+        1.3
+      ],
+      [
+        20.75,
+        11.7,
+        1.85,
+        1.3
+      ],
+      [
+        8.2,
+        14.2,
+        3.15,
+        1.42
+      ],
+      [
+        15.15,
+        14.2,
+        3.2,
+        1.4
+      ],
+      [
+        21,
+        14.7,
+        2.45,
+        1.35
+      ],
+      [
+        3.45,
+        14.2,
+        2.4,
+        1.1
+      ]
+    ],
+    "doors": [
+      {
+        "id": "platform",
+        "x": 13,
+        "y": 16,
+        "label": "Uscita verso la piazza della stazione",
+        "to": "station",
+        "spawn": [
+          17,
+          9
+        ],
+        "interactArea": [
+          11.6,
+          15.25,
+          2.8,
+          1.75
+        ]
+      },
+      {
+        "id": "alley",
+        "x": 23,
+        "y": 14,
+        "label": "Uscita verso il vicolo",
+        "to": "vicolo",
+        "spawn": [
+          12,
+          4
+        ],
+        "interactArea": [
+          22,
+          13.0,
+          2.3,
+          3.5
+        ]
+      },
+      {
+        "id": "platform_tracks",
+        "x": 13,
+        "y": 3,
+        "label": "Ingresso dei binari 1, 2 e 3",
+        "to": "binari",
+        "spawn": [
+          18,
+          5
+        ],
+        "interactArea": [
+          11.8,
+          2.4,
+          2.6,
+          2.7
+        ]
+      }
+    ],
+    "npcs": [
+      {
+        "id": "oldtraveller",
+        "name": "Il Viaggiatore Immobile",
+        "portrait": "portrait_oldtraveller",
+        "x": 17,
+        "y": 7
+      }
+    ],
+    "props": [
+      {
+        "id": "desk01",
+        "name": "Biglietteria serrata",
+        "note": "Il libro degli arrivi è aperto su un giorno che non è ancora esistito.",
+        "kind": "scenery",
+        "x": 7,
+        "y": 4,
+        "paintOnly": true,
+        "footprint": [
+          5.75,
+          3.05,
+          4.3,
+          2.65
+        ],
+        "interactArea": [
+          5.25,
+          5.1,
+          4.6,
+          1.5
+        ]
+      },
+      {
+        "id": "bookshelf01",
+        "name": "Vetrina degli orari",
+        "note": "Le pagine sono state rilegate con un filo bruno e umido.",
+        "kind": "scenery",
+        "x": 3,
+        "y": 4,
+        "paintOnly": true,
+        "footprint": [
+          1.65,
+          3.35,
+          2.8,
+          2.55
+        ],
+        "interactArea": [
+          1.3,
+          5.15,
+          3.4,
+          1.3
+        ]
+      },
+      {
+        "id": "bench02",
+        "name": "Panchina sotto la finestra",
+        "note": "Il legno è incurvato sotto il peso di un passeggero invisibile.",
+        "kind": "scenery",
+        "x": 18,
+        "y": 5,
+        "paintOnly": true,
+        "footprint": [
+          15.55,
+          4.75,
+          3.2,
+          1.18
+        ],
+        "interactArea": [
+          15.2,
+          5.4,
+          4.1,
+          1.3
+        ]
+      },
+      {
+        "id": "sala_stairs",
+        "name": "Scala del piano superiore",
+        "note": "I gradini salgono nel buio. Sui bordi delle pedate sono incisi nomi di viaggiatori che non risultano negli elenchi.",
+        "kind": "stairs",
+        "x": 23,
+        "y": 4,
+        "paintOnly": true,
+        "footprint": [
+          21.3,
+          2.4,
+          3.4,
+          3.9
+        ],
+        "interactArea": [
+          21.0,
+          5.2,
+          3.7,
+          2.0
+        ]
+      },
+      {
+        "id": "chair01",
+        "name": "Scaffale dei biglietti",
+        "note": "Le assi recano cinque nomi incisi con una punta smussata.",
+        "kind": "scenery",
+        "x": 3,
+        "y": 10,
+        "paintOnly": true,
+        "footprint": [
+          2.2,
+          10.2,
+          1.35,
+          1.35
+        ],
+        "interactArea": [
+          1.85,
+          10.1,
+          1.85,
+          1.85
+        ]
+      },
+      {
+        "id": "table01",
+        "name": "Globo annerito",
+        "note": "Una impronta di mano pallida attraversa la polvere.",
+        "kind": "scenery",
+        "x": 21,
+        "y": 12,
+        "paintOnly": true,
+        "footprint": [
+          20.75,
+          11.7,
+          1.85,
+          1.3
+        ],
+        "interactArea": [
+          20.3,
+          11.5,
+          2.4,
+          1.9
+        ]
+      },
+      {
+        "id": "trunk02",
+        "name": "Panca vuota",
+        "note": "Una delle valigie pulsa a intervalli regolari, come un cuore stanco.",
+        "kind": "scenery",
+        "x": 16,
+        "y": 15,
+        "paintOnly": true,
+        "footprint": [
+          15.15,
+          14.2,
+          3.2,
+          1.4
+        ],
+        "interactArea": [
+          14.9,
+          13.9,
+          3.7,
+          2.15
+        ]
+      },
+      {
+        "id": "sala_chest",
+        "name": "Cassa dei documenti",
+        "note": "Il fermaglio è freddissimo, anche sotto il palmo.",
+        "kind": "scenery",
+        "x": 4,
+        "y": 15,
+        "paintOnly": true,
+        "footprint": [
+          3.45,
+          14.2,
+          2.4,
+          1.1
+        ],
+        "interactArea": [
+          3.1,
+          13.9,
+          2.95,
+          1.8
+        ]
+      },
+      {
+        "id": "sala_fog",
+        "name": "Tavolo con candela",
+        "note": "Le fiamme si piegano contro il vento, verso l’atrio.",
+        "kind": "scenery",
+        "x": 5,
+        "y": 12,
+        "paintOnly": true,
+        "footprint": [
+          4.65,
+          11.65,
+          1.3,
+          1.3
+        ],
+        "interactArea": [
+          4.3,
+          11.3,
+          2,
+          1.85
+        ]
+      },
+      {
+        "id": "sala_draw",
+        "name": "Scrittoio abbandonato",
+        "note": "La targhetta riporta tutti i nomi cancellati dai registri.",
+        "kind": "scenery",
+        "x": 22,
+        "y": 15,
+        "paintOnly": true,
+        "footprint": [
+          21,
+          14.7,
+          2.45,
+          1.35
+        ],
+        "interactArea": [
+          20.65,
+          14.1,
+          3.2,
+          2.0
+        ]
+      },
+      {
+        "id": "sala_bag",
+        "name": "Panca consumata",
+        "note": "All’interno sembra esserci qualcosa che batte sui tessuti.",
+        "kind": "scenery",
+        "x": 10,
+        "y": 15,
+        "paintOnly": true,
+        "footprint": [
+          8.2,
+          14.2,
+          3.15,
+          1.42
+        ],
+        "interactArea": [
+          7.95,
+          13.8,
+          3.7,
+          2.1
+        ]
+      },
+      {
+        "id": "barrel_sala_01",
+        "name": "Contenitore delle provviste",
+        "note": "Il coperchio sa di olio rancido.",
+        "kind": "barrel",
+        "x": 23,
+        "y": 15,
+        "paintOnly": true,
+        "footprint": null,
+        "interactArea": [
+          21.9,
+          14.5,
+          1.3,
+          1.3
+        ]
+      },
+      {
+        "id": "sala_notice_board",
+        "name": "Bacheca degli avvisi",
+        "kind": "inspect",
+        "x": 17,
+        "y": 4,
+        "note": "I fogli esposti sono datati domani. Uno reca il tuo nome, ma è già stato strappato a metà.",
+        "paintOnly": true,
+        "footprint": [
+          16.1,
+          3.55,
+          2.6,
+          1.55
+        ],
+        "interactArea": [
+          15.9,
+          5.0,
+          3,
+          1.2
+        ]
+      },
+      {
+        "id": "levatrice_victim",
+        "x": 13,
+        "y": 8,
+        "name": "Corpo del ferroviere",
+        "note": "Il volto è rigido, le maniche strappate. Sul colletto è rimasta un’impronta di ferro che non appartiene a nessuna mano.",
+        "kind": "corpse",
+        "paintOnly": true,
+        "interactArea": [
+          12.3,
+          7.7,
+          2.6,
+          1.6
+        ]
+      }
+    ],
+    "enemies": [],
+    "sceneryBlocks": [],
+    "polygons": []
+  },
+  "vicolo": {
+    "name": "Vicolo della Quarta Ora · Dùsterbedragna",
+    "w": 25,
+    "h": 20,
+    "style": "vicolo",
+    "blocks": [
+      [
+        0,
+        0,
+        25,
+        2
+      ],
+      [
+        0,
+        2,
+        5,
+        18
+      ],
+      [
+        20,
+        2,
+        5,
+        18
+      ],
+      [
+        0,
+        19,
+        25,
+        1
+      ]
+    ],
+    "doors": [
+      {
+        "x": 12,
+        "y": 3,
+        "label": "Rientra in stazione",
+        "to": "sala",
+        "spawn": [
+          22,
+          14
+        ],
+        "id": "hall"
+      },
+      {
+        "x": 12,
+        "y": 18,
+        "label": "Verso la piazza",
+        "to": "piazza",
+        "spawn": [
+          6,
+          30
+        ],
+        "id": "square"
+      }
+    ],
+    "npcs": [],
+    "props": [
+      {
+        "x": 7,
+        "y": 7,
+        "id": "barrel02",
+        "artFile": "art_05_barile_muschio",
+        "name": "Barile vuoto",
+        "note": "Una macchia di sangue rappreso sul bordo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "scale": 1.13,
+        "footprint": [
+          6.896477272727273,
+          7.033177272727272,
+          1.2070454545454543,
+          1.066822727272727
+        ],
+        "interactArea": [
+          6.896477272727273,
+          7.033177272727272,
+          1.2070454545454543,
+          1.066822727272727
+        ],
+        "kind": "barrel"
+      },
+      {
+        "x": 17,
+        "y": 11,
+        "id": "crates02",
+        "artFile": "art_04_cassa_doppia",
+        "name": "Casse accatastate",
+        "note": "Sono state inchiodate dall’interno.",
+        "solid": [
+          0,
+          0,
+          2,
+          2
+        ],
+        "scale": 1.13,
+        "footprint": [
+          16.92215909090909,
+          11.1,
+          1.155681818181818,
+          1
+        ],
+        "interactArea": [
+          16.92215909090909,
+          11.1,
+          1.155681818181818,
+          1
+        ],
+        "kind": "crate"
+      },
+      {
+        "x": 7,
+        "y": 15,
+        "id": "rubble01",
+        "artFile": "art_42_macerie_mattoni",
+        "name": "Macerie",
+        "note": "Pietre e legno formano un passaggio interrotto.",
+        "solid": [
+          -1,
+          0,
+          3,
+          2
+        ],
+        "scale": 1.12
+      },
+      {
+        "x": 17,
+        "y": 6,
+        "id": "lantern01",
+        "artFile": "art_13_candelabro_ferro",
+        "name": "Candelabro di strada",
+        "note": "Le fiamme tremano anche quando non c’è vento.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "scale": 0.9
+      },
+      {
+        "x": 6,
+        "y": 17,
+        "id": "fence01",
+        "artFile": "art_38_cancello_ferro",
+        "name": "Grata contorta",
+        "note": "Il ferro si è piegato verso il centro del vicolo.",
+        "solid": [
+          0,
+          0,
+          2,
+          1
+        ],
+        "scale": 1.07
+      },
+      {
+        "x": 9,
+        "y": 9,
+        "id": "v_cart",
+        "artFile": "art_09_carretto_vuoto",
+        "name": "Carretto abbandonato",
+        "note": "Le ruote sono state bloccate con pietre.",
+        "solid": [
+          -1,
+          0,
+          3,
+          2
+        ],
+        "scale": 1.1
+      },
+      {
+        "x": 15,
+        "y": 14,
+        "id": "v_scrap",
+        "artFile": "art_43_roccia_crollata",
+        "name": "Muro crollato",
+        "note": "Una frattura recente svela un passaggio murato.",
+        "solid": [
+          0,
+          0,
+          2,
+          2
+        ],
+        "scale": 1.1
+      },
+      {
+        "x": 7,
+        "y": 12,
+        "id": "v_jar",
+        "artFile": "art_07_anfora_grande",
+        "name": "Anfora vuota",
+        "note": "La superficie è coperta da dita sottilissime.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "scale": 0.85
+      },
+      {
+        "x": 18,
+        "y": 16,
+        "id": "v_wood",
+        "artFile": "art_08_cassa_telo",
+        "name": "Cassa coperta",
+        "note": "Sotto il telo qualcosa si muove.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "scale": 1.03,
+        "footprint": [
+          17.54022727272727,
+          16.1,
+          1.9195454545454547,
+          1
+        ],
+        "interactArea": [
+          17.54022727272727,
+          16.1,
+          1.9195454545454547,
+          1
+        ],
+        "kind": "crate"
+      },
+      {
+        "x": 10,
+        "y": 16,
+        "id": "v_sc",
+        "artFile": "art_22_tavolino_medico",
+        "name": "Tavolo improvvisato",
+        "note": "Gli attrezzi sembrano troppo grandi per un medico.",
+        "solid": [
+          -1,
+          0,
+          2,
+          1
+        ],
+        "scale": 0.83
+      },
+      {
+        "x": 18,
+        "y": 15,
+        "id": "barrel_vicolo_02",
+        "artFile": "art_05_barile_muschio",
+        "name": "Barile del vicolo",
+        "note": "Odore di terra umida.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "scale": 1,
+        "footprint": [
+          17.96590909090909,
+          15.100000000000001,
+          1.0681818181818181,
+          1
+        ],
+        "interactArea": [
+          17.96590909090909,
+          15.100000000000001,
+          1.0681818181818181,
+          1
+        ],
+        "kind": "barrel"
+      }
+    ],
+    "enemies": [
+      {
+        "x": 14,
+        "y": 10,
+        "id": "stitch_intro",
+        "kind": "stitch"
+      }
+    ]
+  },
+  "piazza": {
+    "name": "Piazza dei Senzavoce · Dùsterbedragna",
+    "w": 48,
+    "h": 34,
+    "style": "street",
+    "blocks": [
+      [
+        0,
+        0,
+        48,
+        1
+      ],
+      [
+        0,
+        33,
+        48,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        34
+      ],
+      [
+        47,
+        0,
+        1,
+        34
+      ]
+    ],
+    "polygons": [
+      [
+        [
+          10.6,
+          15.2
+        ],
+        [
+          14,
+          14.8
+        ],
+        [
+          19,
+          14.8
+        ],
+        [
+          21.8,
+          16.5
+        ],
+        [
+          21.8,
+          23.5
+        ],
+        [
+          19.8,
+          26.5
+        ],
+        [
+          12.8,
+          26.5
+        ],
+        [
+          10.5,
+          23.5
+        ]
+      ],
+      [
+        [
+          24.8,
+          1
+        ],
+        [
+          34,
+          1
+        ],
+        [
+          34,
+          11
+        ],
+        [
+          30.1,
+          12.4
+        ],
+        [
+          28.3,
+          9.8
+        ]
+      ],
+      [
+        [
+          33,
+          1
+        ],
+        [
+          47,
+          1
+        ],
+        [
+          47,
+          27.3
+        ],
+        [
+          35,
+          27.3
+        ],
+        [
+          33,
+          25
+        ],
+        [
+          31,
+          19.4
+        ],
+        [
+          29,
+          13
+        ]
+      ],
+      [
+        [
+          19.5,
+          29.6
+        ],
+        [
+          26.5,
+          28.5
+        ],
+        [
+          32,
+          30.5
+        ],
+        [
+          33,
+          33
+        ],
+        [
+          19.5,
+          33
+        ]
+      ]
+    ],
+    "doors": [
+      {
+        "x": 32,
+        "y": 27,
+        "label": "Portone della cappella",
+        "to": "cappella",
+        "spawn": [
+          14,
+          18
+        ],
+        "id": "chapel"
+      },
+      {
+        "x": 5,
+        "y": 27,
+        "label": "Passaggio verso le gallerie",
+        "to": "galleria",
+        "spawn": [
+          4,
+          18
+        ],
+        "id": "tunnel"
+      },
+      {
+        "id": "down_to_city",
+        "x": 12,
+        "y": 31,
+        "label": "Scendi verso la Via del Distretto Basso",
+        "to": "strada",
+        "spawn": [
+          17,
+          4
+        ]
+      }
+    ],
+    "npcs": [
+      {
+        "x": 25,
+        "y": 26,
+        "id": "keeper",
+        "name": "Il Custode",
+        "portrait": "portrait_keeper_new"
+      },
+      {
+        "x": 33,
+        "y": 30,
+        "id": "woman",
+        "name": "Ada",
+        "portrait": "portrait_ada"
+      },
+      {
+        "x": 29,
+        "y": 26,
+        "id": "survivor",
+        "name": "Neri",
+        "portrait": "portrait_neri"
+      }
+    ],
+    "props": [
+      {
+        "x": 16,
+        "y": 20,
+        "id": "well",
+        "name": "Statua dei Senzavoce",
+        "interactArea": [
+          10.1,
+          14.3,
+          12.3,
+          12.5
+        ],
+        "kind": "monument",
+        "paintOnly": true,
+        "footprint": [
+          10.6,
+          15.2,
+          11.2,
+          11.3
+        ]
+      },
+      {
+        "x": 5,
+        "y": 16,
+        "id": "corpse",
+        "name": "Un corpo immobile",
+        "solid": null,
+        "paintOnly": true
+      },
+      {
+        "id": "barrel_piazza_02",
+        "name": "Barile sotto la finestra",
+        "note": "Il legno è fradicio. Qualcosa nel fondo rimane perfettamente asciutto.",
+        "paintOnly": true,
+        "interactArea": [
+          33.8,
+          25.1,
+          2.5,
+          2.8
+        ],
+        "footprint": [
+          34.2,
+          26,
+          1.5,
+          1.4
+        ],
+        "kind": "barrel"
+      }
+    ],
+    "enemies": [
+      {
+        "x": 24,
+        "y": 21,
+        "id": "stitch1",
+        "kind": "stitch"
+      }
+    ],
+    "sceneryBlocks": []
+  },
+  "cappella": {
+    "name": "La Cappella di San Velo",
+    "w": 29,
+    "h": 22,
+    "style": "chapel",
+    "blocks": [
+      [
+        0,
+        0,
+        29,
+        2
+      ],
+      [
+        0,
+        2,
+        2,
+        20
+      ],
+      [
+        27,
+        2,
+        2,
+        20
+      ],
+      [
+        0,
+        21,
+        29,
+        1
+      ],
+      [
+        5,
+        6,
+        4,
+        3
+      ],
+      [
+        5,
+        11,
+        4,
+        3
+      ],
+      [
+        20,
+        6,
+        4,
+        3
+      ],
+      [
+        20,
+        11,
+        4,
+        3
+      ],
+      [
+        12,
+        3,
+        5,
+        3
+      ]
+    ],
+    "doors": [
+      {
+        "x": 14,
+        "y": 20,
+        "label": "Uscita sulla piazza",
+        "to": "piazza",
+        "spawn": [
+          31,
+          29
+        ],
+        "id": "square"
+      }
+    ],
+    "npcs": [
+      {
+        "x": 22,
+        "y": 16,
+        "id": "priest",
+        "name": "Il Confessore",
+        "portrait": "portrait_priest"
+      }
+    ],
+    "props": [
+      {
+        "x": 14,
+        "y": 6,
+        "id": "altar",
+        "name": "Altare senza santo",
+        "solid": [
+          -1,
+          -1,
+          3,
+          2
+        ]
+      },
+      {
+        "x": 6,
+        "y": 17,
+        "id": "chest",
+        "name": "Cassetta delle offerte",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "x": 19,
+        "y": 16,
+        "id": "chair03",
+        "art": "chair",
+        "name": "Sedia di confessione",
+        "note": "Sul sedile è inciso un nome che non riconosci.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "x": 10,
+        "y": 16,
+        "id": "desk03",
+        "art": "dresser",
+        "name": "Cassettone votivo",
+        "note": "Qualcuno ha strappato tutte le fotografie.",
+        "solid": [
+          0,
+          0,
+          2,
+          1
+        ]
+      }
+    ],
+    "enemies": []
+  },
+  "galleria": {
+    "name": "Galleria delle Tre Voci",
+    "w": 35,
+    "h": 23,
+    "style": "tunnel",
+    "blocks": [
+      [
+        0,
+        0,
+        35,
+        2
+      ],
+      [
+        0,
+        2,
+        2,
+        21
+      ],
+      [
+        33,
+        2,
+        2,
+        21
+      ],
+      [
+        0,
+        22,
+        35,
+        1
+      ],
+      [
+        7,
+        5,
+        6,
+        5
+      ],
+      [
+        21,
+        13,
+        5,
+        6
+      ],
+      [
+        11,
+        16,
+        4,
+        4
+      ]
+    ],
+    "doors": [
+      {
+        "x": 3,
+        "y": 20,
+        "label": "Torna alla piazza",
+        "to": "piazza",
+        "spawn": [
+          6,
+          28
+        ],
+        "id": "square"
+      }
+    ],
+    "npcs": [],
+    "props": [
+      {
+        "x": 29,
+        "y": 5,
+        "id": "gate",
+        "name": "La porta che respira",
+        "solid": [
+          0,
+          0,
+          2,
+          2
+        ]
+      },
+      {
+        "x": 8,
+        "y": 12,
+        "id": "bones",
+        "name": "Una pila di ossa",
+        "solid": [
+          -1,
+          0,
+          2,
+          1
+        ]
+      },
+      {
+        "x": 18,
+        "y": 18,
+        "id": "bed01",
+        "art": "bed",
+        "name": "Letto arrugginito",
+        "note": "È ancora caldo.",
+        "solid": [
+          -1,
+          0,
+          3,
+          2
+        ]
+      },
+      {
+        "x": 27,
+        "y": 18,
+        "id": "rubble02",
+        "art": "rubble",
+        "name": "Tavolato crollato",
+        "note": "Tra le pietre c’è un dente umano.",
+        "solid": [
+          -1,
+          0,
+          3,
+          2
+        ]
+      }
+    ],
+    "enemies": [
+      {
+        "x": 18,
+        "y": 10,
+        "id": "sexton1",
+        "kind": "sexton"
+      },
+      {
+        "x": 28,
+        "y": 8,
+        "id": "bell1",
+        "kind": "bell"
+      }
+    ]
+  },
+  "binari": {
+    "name": "I Tre Binari · Dùsterbedragna",
+    "w": 36,
+    "h": 25,
+    "style": "binari",
+    "blocks": [
+      [
+        0,
+        0,
+        16.5,
+        6.05
+      ],
+      [
+        19.5,
+        0,
+        16.5,
+        6.05
+      ],
+      [
+        16.5,
+        0,
+        3,
+        3.0
+      ],
+      [
+        0,
+        0,
+        1.6,
+        25
+      ],
+      [
+        34.4,
+        0,
+        1.6,
+        25
+      ],
+      [
+        0,
+        24,
+        36,
+        1
+      ],
+      [
+        1.5,
+        7.25,
+        23.5,
+        4.42
+      ],
+      [
+        1.5,
+        15.7,
+        30.4,
+        2.58
+      ],
+      [
+        1.5,
+        22.0,
+        31.8,
+        2.4
+      ],
+      [
+        4.0,
+        4.8,
+        2.6,
+        1.35
+      ],
+      [
+        10.8,
+        4.75,
+        2.8,
+        1.15
+      ],
+      [
+        22.5,
+        4.65,
+        2.65,
+        1.65
+      ],
+      [
+        27.2,
+        4.7,
+        2.5,
+        1.2
+      ],
+      [
+        4.35,
+        13.35,
+        2.45,
+        1.05
+      ],
+      [
+        10.2,
+        13.1,
+        2.3,
+        1.6
+      ],
+      [
+        15.8,
+        12.4,
+        2.65,
+        2.5
+      ],
+      [
+        21.5,
+        13.4,
+        1.3,
+        1.4
+      ],
+      [
+        4.7,
+        19.0,
+        3.0,
+        1.15
+      ],
+      [
+        11.3,
+        18.9,
+        3.55,
+        1.8
+      ]
+    ],
+    "doors": [
+      {
+        "id": "return_waiting",
+        "x": 18,
+        "y": 5,
+        "label": "Ritorna alla sala d’attesa",
+        "to": "sala",
+        "spawn": [
+          13,
+          4
+        ],
+        "interactArea": [
+          16.7,
+          3.1,
+          3.1,
+          3.0
+        ]
+      }
+    ],
+    "npcs": [],
+    "props": [
+      {
+        "id": "platform_1",
+        "x": 25,
+        "y": 5,
+        "name": "Binario 1",
+        "paintOnly": true,
+        "interactArea": [
+          23.7,
+          4.2,
+          6,
+          2.1
+        ],
+        "note": "Il treno delle 03:17 è immobile. Nessun passeggero scende. Gli orologi segnano una data cancellata."
+      },
+      {
+        "id": "platform_2",
+        "x": 25,
+        "y": 12,
+        "name": "Binario 2",
+        "paintOnly": true,
+        "interactArea": [
+          23.7,
+          11.2,
+          6,
+          2.1
+        ],
+        "note": "Sul secondo binario i bagagli non hanno proprietari. Una valigia è legata con corda da obitorio."
+      },
+      {
+        "id": "platform_3",
+        "x": 25,
+        "y": 18,
+        "name": "Binario 3",
+        "paintOnly": true,
+        "interactArea": [
+          23.7,
+          17.2,
+          6,
+          2.1
+        ],
+        "note": "Il terzo binario non compare nella pianta della stazione, eppure è stato costruito molto tempo fa."
+      },
+      {
+        "id": "gear_tool_rail",
+        "x": 13,
+        "y": 20,
+        "name": "Cassetta del ferroviere",
+        "artFile": "",
+        "scale": 0.75,
+        "solid": null,
+        "note": "Una cassetta chiusa male. Dentro c’è un vecchio bastone ferrato.",
+        "interactArea": [
+          11.4,
+          18.5,
+          3.1,
+          2.7
+        ],
+        "paintOnly": true,
+        "art": "",
+        "footprint": [
+          12.0,
+          19.2,
+          2.1,
+          1.3
+        ]
+      }
+    ],
+    "enemies": [
+      {
+        "id": "ossuary_rail_01",
+        "kind": "ossuary",
+        "x": 29,
+        "y": 20
+      }
+    ],
+    "sceneryBlocks": [],
+    "polygons": []
+  },
+  "strada": {
+    "name": "Via del Distretto Basso · Dùsterbedragna",
+    "w": 34,
+    "h": 24,
+    "style": "strada",
+    "blocks": [
+      [
+        0,
+        0,
+        34,
+        2
+      ],
+      [
+        0,
+        23,
+        34,
+        1
+      ]
+    ],
+    "doors": [
+      {
+        "id": "return_square",
+        "x": 17,
+        "y": 2,
+        "label": "Torna alla Piazza dei Senzavoce",
+        "to": "piazza",
+        "spawn": [
+          12,
+          30
+        ]
+      },
+      {
+        "id": "door_olmo",
+        "x": 4,
+        "y": 21,
+        "label": "Casa dell’Olmo — porta del sigillo",
+        "to": "casa_olmo",
+        "spawn": [
+          14,
+          21
+        ],
+        "interactArea": [
+          6.2,
+          20.5,
+          2.6,
+          2.3
+        ]
+      },
+      {
+        "id": "door_medico",
+        "x": 26,
+        "y": 14,
+        "label": "Ambulatorio — porta sprangata",
+        "to": "casa_medico",
+        "spawn": [
+          9,
+          18
+        ],
+        "hp": 32,
+        "armor": 1,
+        "interactArea": [
+          24,
+          14.2,
+          2.2,
+          1.8
+        ]
+      },
+      {
+        "id": "door_sarto",
+        "x": 9,
+        "y": 6,
+        "label": "Casa del Sarto — porta blindata",
+        "to": "casa_sarto",
+        "spawn": [
+          14,
+          10
+        ],
+        "hp": 58,
+        "armor": 3,
+        "interactArea": [
+          9.5,
+          6,
+          2.6,
+          2.2
+        ]
+      },
+      {
+        "id": "door_cantina",
+        "x": 30,
+        "y": 22,
+        "label": "Cantina murata — porta blindata",
+        "to": "casa_cantina",
+        "spawn": [
+          14,
+          10
+        ],
+        "hp": 80,
+        "armor": 4,
+        "interactArea": [
+          25.5,
+          17.4,
+          3.0,
+          2.4
+        ]
+      },
+      {
+        "id": "down_to_sottostrada",
+        "x": 16,
+        "y": 22,
+        "label": "Scala spezzata verso il Sottostrada",
+        "to": "strada_bassa",
+        "spawn": [
+          17,
+          4
+        ],
+        "interactArea": [
+          14.2,
+          21.0,
+          3.4,
+          2.4
+        ]
+      }
+    ],
+    "npcs": [
+      {
+        "id": "corrupted_wanderer",
+        "name": "Il Viandante Corrotto",
+        "portrait": "portrait_corrupted",
+        "x": 21,
+        "y": 14
+      }
+    ],
+    "props": [
+      {
+        "id": "street_barrel_left",
+        "name": "Barile della via",
+        "x": 11.1,
+        "y": 6.3,
+        "kind": "barrel",
+        "paintOnly": true,
+        "footprint": [
+          10.5,
+          5.3,
+          1.4,
+          1.7
+        ],
+        "interactArea": [
+          10.5,
+          5.3,
+          1.4,
+          1.7
+        ],
+        "artFile": "",
+        "scale": 1,
+        "note": "Il legno è umido e annerito."
+      },
+      {
+        "id": "street_barrel_medico",
+        "name": "Barile dell’ambulatorio",
+        "x": 23.1,
+        "y": 14.2,
+        "kind": "barrel",
+        "paintOnly": true,
+        "footprint": [
+          22.65,
+          12.55,
+          1.55,
+          2.35
+        ],
+        "interactArea": [
+          22.65,
+          12.55,
+          1.55,
+          2.35
+        ],
+        "artFile": "",
+        "scale": 1,
+        "note": "Il legno è umido e annerito."
+      },
+      {
+        "id": "street_crate_high",
+        "name": "Cassa alta",
+        "x": 27,
+        "y": 19.7,
+        "kind": "crate",
+        "paintOnly": true,
+        "footprint": [
+          26,
+          18.05,
+          2.8,
+          3.25
+        ],
+        "interactArea": [
+          26,
+          18.05,
+          2.8,
+          3.25
+        ],
+        "artFile": "",
+        "scale": 1,
+        "note": "Il legno è umido e annerito."
+      },
+      {
+        "id": "street_crate_cloth",
+        "name": "Cassa coperta",
+        "x": 26,
+        "y": 21.6,
+        "kind": "crate",
+        "paintOnly": true,
+        "footprint": [
+          24.8,
+          20.1,
+          2.0,
+          2.3
+        ],
+        "interactArea": [
+          24.8,
+          20.1,
+          2.0,
+          2.3
+        ],
+        "artFile": "",
+        "scale": 1,
+        "note": "Il legno è umido e annerito."
+      },
+      {
+        "id": "street_barrel_bottom",
+        "name": "Barile ferrato",
+        "x": 27.2,
+        "y": 22.8,
+        "kind": "barrel",
+        "paintOnly": true,
+        "footprint": [
+          26.5,
+          21.05,
+          2.1,
+          2.95
+        ],
+        "interactArea": [
+          26.5,
+          21.05,
+          2.1,
+          2.95
+        ],
+        "artFile": "",
+        "scale": 1,
+        "note": "Il legno è umido e annerito."
+      }
+    ],
+    "enemies": [
+      {
+        "id": "corrupted_wanderer",
+        "kind": "corrupted",
+        "x": 21,
+        "y": 14
+      }
+    ],
+    "polygons": [
+      [
+        [
+          0,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          12,
+          6
+        ],
+        [
+          11.5,
+          10
+        ],
+        [
+          10.5,
+          14
+        ],
+        [
+          8,
+          17
+        ],
+        [
+          8,
+          19
+        ],
+        [
+          6.7,
+          22
+        ],
+        [
+          6,
+          24
+        ],
+        [
+          0,
+          24
+        ]
+      ],
+      [
+        [
+          21.2,
+          0
+        ],
+        [
+          34,
+          0
+        ],
+        [
+          34,
+          24
+        ],
+        [
+          29.2,
+          24
+        ],
+        [
+          29,
+          21
+        ],
+        [
+          28,
+          18
+        ],
+        [
+          26.2,
+          16
+        ],
+        [
+          24.4,
+          14.7
+        ],
+        [
+          23,
+          11
+        ],
+        [
+          22.5,
+          7
+        ],
+        [
+          21.7,
+          4
+        ]
+      ]
+    ]
+  },
+  "casa_olmo": {
+    "name": "Casa dell’Olmo",
+    "w": 30,
+    "h": 24,
+    "style": "chapel",
+    "blocks": [
+      [
+        0,
+        0,
+        30,
+        2
+      ],
+      [
+        0,
+        22,
+        30,
+        2
+      ],
+      [
+        0,
+        0,
+        2,
+        24
+      ],
+      [
+        28,
+        0,
+        2,
+        24
+      ],
+      [
+        11,
+        2,
+        2,
+        3
+      ],
+      [
+        11,
+        8,
+        2,
+        7
+      ],
+      [
+        11,
+        18,
+        2,
+        4
+      ],
+      [
+        17,
+        2,
+        2,
+        3
+      ],
+      [
+        17,
+        8,
+        2,
+        7
+      ],
+      [
+        17,
+        18,
+        2,
+        4
+      ],
+      [
+        2,
+        10,
+        4,
+        2
+      ],
+      [
+        8,
+        10,
+        3,
+        2
+      ],
+      [
+        19,
+        10,
+        4,
+        2
+      ],
+      [
+        25,
+        10,
+        3,
+        2
+      ],
+      [
+        2,
+        17,
+        2,
+        1
+      ],
+      [
+        26,
+        13,
+        2,
+        1
+      ]
+    ],
+    "doors": [
+      {
+        "id": "leave_house",
+        "x": 14,
+        "y": 22,
+        "label": "Esci sulla via",
+        "to": "strada",
+        "spawn": [
+          8,
+          22
+        ]
+      },
+      {
+        "id": "olmo_service",
+        "x": 14,
+        "y": 1,
+        "label": "Passaggio di servizio",
+        "to": "casa_olmo_servizio",
+        "spawn": [
+          10,
+          11
+        ]
+      }
+    ],
+    "npcs": [
+      {
+        "id": "pentesilea",
+        "name": "Pentesilea",
+        "portrait": "portrait_pentesilea",
+        "x": 15,
+        "y": 4
+      }
+    ],
+    "props": [
+      {
+        "id": "olmo_dresser",
+        "name": "Cassettone di noce",
+        "x": 5,
+        "y": 4,
+        "kind": "furniture",
+        "paintOnly": false,
+        "footprint": [
+          3.9198863636363637,
+          3.8408181818181815,
+          3.160227272727273,
+          1.2591818181818182
+        ],
+        "interactArea": [
+          3.9198863636363637,
+          3.8408181818181815,
+          3.160227272727273,
+          1.2591818181818182
+        ],
+        "artFile": "art_25_credenza_stoviglie",
+        "scale": 1.35,
+        "note": "Il legno è umido e annerito."
+      },
+      {
+        "id": "olmo_bed",
+        "name": "Letto freddo",
+        "x": 4,
+        "y": 7,
+        "kind": "furniture",
+        "paintOnly": false,
+        "footprint": [
+          3.672727272727273,
+          5.568545454545454,
+          1.6545454545454545,
+          2.5314545454545456
+        ],
+        "interactArea": [
+          3.672727272727273,
+          5.568545454545454,
+          1.6545454545454545,
+          2.5314545454545456
+        ],
+        "artFile": "art_20_letto_01",
+        "scale": 1.3,
+        "note": "Il legno è umido e annerito."
+      },
+      {
+        "id": "olmo_trunk",
+        "name": "Baule dell’Olmo",
+        "x": 9,
+        "y": 20,
+        "kind": "furniture",
+        "paintOnly": false,
+        "footprint": [
+          8.7,
+          19.7,
+          1.6,
+          1.2
+        ],
+        "interactArea": [
+          8.7,
+          19.7,
+          1.6,
+          1.2
+        ],
+        "artFile": "art_02_baule_tavole",
+        "scale": 1.3,
+        "note": "Il legno è umido e annerito."
+      },
+      {
+        "id": "olmo_table",
+        "name": "Tavolo della cucina",
+        "x": 23,
+        "y": 15,
+        "kind": "furniture",
+        "paintOnly": false,
+        "footprint": [
+          21.988636363636363,
+          14.29018181818182,
+          3.022727272727273,
+          1.8098181818181818
+        ],
+        "interactArea": [
+          21.988636363636363,
+          14.29018181818182,
+          3.022727272727273,
+          1.8098181818181818
+        ],
+        "artFile": "art_14_tavolo_documenti",
+        "scale": 1.4,
+        "note": "Il legno è umido e annerito."
+      },
+      {
+        "id": "olmo_crate_kitchen",
+        "name": "Cassa di viveri",
+        "x": 26,
+        "y": 19,
+        "kind": "crate",
+        "paintOnly": false,
+        "footprint": [
+          25.76818181818182,
+          18.725454545454546,
+          1.4636363636363634,
+          1.3745454545454545
+        ],
+        "interactArea": [
+          25.76818181818182,
+          18.725454545454546,
+          1.4636363636363634,
+          1.3745454545454545
+        ],
+        "artFile": "art_11_cassa_rinforzata",
+        "scale": 1.4,
+        "note": "Il legno è umido e annerito."
+      },
+      {
+        "id": "olmo_barrel_kitchen",
+        "name": "Barile di legno",
+        "x": 21,
+        "y": 20,
+        "kind": "barrel",
+        "paintOnly": false,
+        "footprint": [
+          20.77897727272727,
+          19.730363636363638,
+          1.4420454545454546,
+          1.3696363636363635
+        ],
+        "interactArea": [
+          20.77897727272727,
+          19.730363636363638,
+          1.4420454545454546,
+          1.3696363636363635
+        ],
+        "artFile": "art_05_barile_muschio",
+        "scale": 1.35,
+        "note": "Il legno è umido e annerito."
+      },
+      {
+        "id": "olmo_cabinet",
+        "name": "Armadio marcito",
+        "x": 25,
+        "y": 4,
+        "kind": "furniture",
+        "paintOnly": false,
+        "footprint": [
+          24.354545454545455,
+          2.7403636363636363,
+          2.290909090909091,
+          2.3596363636363633
+        ],
+        "interactArea": [
+          24.354545454545455,
+          2.7403636363636363,
+          2.290909090909091,
+          2.3596363636363633
+        ],
+        "artFile": "art_17_armadio_doppio",
+        "scale": 1.4,
+        "note": "Il legno è umido e annerito."
+      },
+      {
+        "id": "olmo_barrel_room",
+        "name": "Barile nella camera",
+        "x": 20,
+        "y": 3,
+        "kind": "barrel",
+        "paintOnly": false,
+        "footprint": [
+          19.77897727272727,
+          2.730363636363636,
+          1.4420454545454546,
+          1.3696363636363635
+        ],
+        "interactArea": [
+          19.77897727272727,
+          2.730363636363636,
+          1.4420454545454546,
+          1.3696363636363635
+        ],
+        "artFile": "art_05_barile_muschio",
+        "scale": 1.35,
+        "note": "Il legno è umido e annerito."
+      },
+      {
+        "id": "olmo_books",
+        "name": "Libreria saccheggiata",
+        "x": 8,
+        "y": 3,
+        "kind": "furniture",
+        "paintOnly": false,
+        "footprint": [
+          7.968181818181818,
+          3.25,
+          1.0636363636363637,
+          0.8
+        ],
+        "interactArea": [
+          7.968181818181818,
+          3.25,
+          1.0636363636363637,
+          0.8
+        ],
+        "artFile": "art_18_libreria_antica",
+        "scale": 0.9,
+        "note": "Resta soltanto polvere."
+      },
+      {
+        "id": "olmo_chair",
+        "name": "Sedia rovesciata",
+        "x": 9,
+        "y": 8,
+        "kind": "furniture",
+        "paintOnly": false,
+        "footprint": [
+          9.107272727272727,
+          8.25,
+          0.7854545454545455,
+          0.8
+        ],
+        "interactArea": [
+          9.107272727272727,
+          8.25,
+          0.7854545454545455,
+          0.8
+        ],
+        "artFile": "art_15_sedia_legno",
+        "scale": 0.72,
+        "note": "Resta soltanto polvere."
+      },
+      {
+        "id": "olmo_stool",
+        "name": "Sgabello",
+        "x": 22,
+        "y": 17,
+        "kind": "furniture",
+        "paintOnly": false,
+        "footprint": [
+          22.145454545454545,
+          17.25,
+          0.7090909090909091,
+          0.8
+        ],
+        "interactArea": [
+          22.145454545454545,
+          17.25,
+          0.7090909090909091,
+          0.8
+        ],
+        "artFile": "art_15_sedia_legno",
+        "scale": 0.65,
+        "note": "Resta soltanto polvere."
+      },
+      {
+        "id": "olmo_sack",
+        "name": "Sacco strappato",
+        "x": 26,
+        "y": 8,
+        "kind": "furniture",
+        "paintOnly": false,
+        "footprint": [
+          26.081818181818182,
+          8.25,
+          0.8363636363636364,
+          0.8
+        ],
+        "interactArea": [
+          26.081818181818182,
+          8.25,
+          0.8363636363636364,
+          0.8
+        ],
+        "artFile": "art_03_sacco_tela",
+        "scale": 0.8,
+        "note": "Resta soltanto polvere."
+      },
+      {
+        "id": "olmo_books81",
+        "x": 4,
+        "y": 8,
+        "name": "Libri strappati",
+        "artFile": "art_16_tavolino_libri",
+        "scale": 0.85,
+        "kind": "",
+        "note": "La polvere conserva il segno di una vita interrotta."
+      },
+      {
+        "id": "olmo_chair81",
+        "x": 24,
+        "y": 8,
+        "name": "Sedia abbandonata",
+        "artFile": "art_15_sedia_legno",
+        "scale": 0.85,
+        "kind": "",
+        "note": "La polvere conserva il segno di una vita interrotta."
+      },
+      {
+        "id": "olmo_vases",
+        "x": 24,
+        "y": 19,
+        "name": "Stoviglie",
+        "artFile": "art_10_vasetti",
+        "scale": 0.8,
+        "kind": "",
+        "note": "La polvere conserva il segno di una vita interrotta."
+      },
+      {
+        "id": "olmo_hole82",
+        "name": "Cavità insolita",
+        "x": 11,
+        "y": 4,
+        "kind": "",
+        "artFile": "olmo_hole82",
+        "scale": 0.62,
+        "interactArea": [
+          10,
+          4,
+          2,
+          1.8
+        ],
+        "note": "La muratura sembra essere stata scavata dall’interno.",
+        "paintOnly": true
+      },
+      {
+        "id": "olmo_candle",
+        "name": "Candelabro annerito",
+        "x": 3,
+        "y": 14,
+        "kind": "furniture",
+        "artFile": "art_13_candelabro_ferro",
+        "scale": 1.05,
+        "paintOnly": false,
+        "footprint": [
+          3,
+          14,
+          1,
+          1
+        ],
+        "interactArea": [
+          3,
+          14,
+          1,
+          1
+        ],
+        "note": "La cera si è rappresa in forme simili a dita."
+      },
+      {
+        "id": "olmo_crate_hall",
+        "name": "Cassa di provviste",
+        "x": 3,
+        "y": 20,
+        "kind": "crate",
+        "artFile": "art_08_cassa_telo",
+        "scale": 1.25,
+        "paintOnly": false,
+        "footprint": [
+          2.5,
+          19.7,
+          2,
+          1.2
+        ],
+        "interactArea": [
+          2.5,
+          19.7,
+          2,
+          1.2
+        ],
+        "note": "Il telo nasconde una cassa ancora intatta."
+      },
+      {
+        "id": "olmo_rubble",
+        "name": "Intonaco crollato",
+        "x": 5,
+        "y": 21,
+        "kind": "furniture",
+        "artFile": "art_42_macerie_mattoni",
+        "scale": 0.85,
+        "paintOnly": false,
+        "footprint": [
+          4.7,
+          20.8,
+          1.3,
+          1
+        ],
+        "interactArea": [
+          4.7,
+          20.8,
+          1.3,
+          1
+        ],
+        "note": "Tra i frammenti spunta un pezzo di cornice."
+      },
+      {
+        "id": "olmo_south_altar85",
+        "name": "Altare domestico",
+        "x": 8,
+        "y": 13,
+        "kind": "furniture",
+        "artFile": "art_25_credenza_stoviglie",
+        "scale": 1.25,
+        "paintOnly": false,
+        "footprint": [
+          7.2,
+          12.8,
+          2.4,
+          1.2
+        ],
+        "interactArea": [
+          7.2,
+          12.8,
+          2.4,
+          1.2
+        ],
+        "note": "Piattini votivi e cera secca. Qualcuno pregava qui ogni sera."
+      },
+      {
+        "id": "olmo_south_saint85",
+        "name": "Santo senza nome",
+        "x": 9,
+        "y": 12,
+        "kind": "furniture",
+        "artFile": "art_28_statua_santo",
+        "scale": 0.72,
+        "paintOnly": false,
+        "footprint": [
+          9,
+          12,
+          1,
+          1
+        ],
+        "interactArea": [
+          9,
+          12,
+          1,
+          1
+        ],
+        "note": "La targhetta è stata grattata via. Non sai a chi fosse dedicata."
+      },
+      {
+        "id": "olmo_south_bench85",
+        "name": "Inginocchiatoio",
+        "x": 5,
+        "y": 16,
+        "kind": "furniture",
+        "artFile": "art_26_panca_bassa",
+        "scale": 0.95,
+        "paintOnly": false,
+        "footprint": [
+          4.7,
+          15.7,
+          1.5,
+          1
+        ],
+        "interactArea": [
+          4.7,
+          15.7,
+          1.5,
+          1
+        ],
+        "note": "Il legno è consumato nei punti in cui poggiavano le ginocchia."
+      },
+      {
+        "id": "olmo_south_clock85",
+        "name": "Orologio fermo",
+        "x": 3,
+        "y": 19,
+        "kind": "furniture",
+        "artFile": "art_31_orologio_piedistallo",
+        "scale": 0.74,
+        "paintOnly": false,
+        "footprint": [
+          3,
+          18.5,
+          1,
+          1.1
+        ],
+        "interactArea": [
+          3,
+          18.5,
+          1,
+          1.1
+        ],
+        "note": "Le lancette sono ferme sulle 03:17."
+      },
+      {
+        "id": "olmo_south_vases85",
+        "name": "Offerte dimenticate",
+        "x": 9,
+        "y": 17,
+        "kind": "furniture",
+        "artFile": "art_10_vasetti",
+        "scale": 0.85,
+        "paintOnly": false,
+        "footprint": [
+          9,
+          17,
+          1,
+          1
+        ],
+        "interactArea": [
+          9,
+          17,
+          1,
+          1
+        ],
+        "note": "I vasetti sono vuoti, tranne uno colmo di cenere fredda."
+      },
+      {
+        "id": "floor86_0",
+        "name": "Pavimento ceduto",
+        "x": 7,
+        "y": 7,
+        "kind": "furniture",
+        "paintOnly": true,
+        "footprint": [
+          7,
+          7,
+          1,
+          1
+        ],
+        "interactArea": [
+          6.9,
+          6.9,
+          1.2,
+          1.2
+        ],
+        "note": "Le assi hanno ceduto. Sotto il pavimento non riesci a distinguere il fondo."
+      },
+      {
+        "id": "floor86_1",
+        "name": "Pavimento ceduto",
+        "x": 6,
+        "y": 19,
+        "kind": "furniture",
+        "paintOnly": true,
+        "footprint": [
+          6,
+          19,
+          1,
+          1
+        ],
+        "interactArea": [
+          5.9,
+          18.9,
+          1.2,
+          1.2
+        ],
+        "note": "Le assi hanno ceduto. Sotto il pavimento non riesci a distinguere il fondo."
+      },
+      {
+        "id": "floor86_2",
+        "name": "Pavimento ceduto",
+        "x": 21,
+        "y": 7,
+        "kind": "furniture",
+        "paintOnly": true,
+        "footprint": [
+          21,
+          7,
+          1,
+          1
+        ],
+        "interactArea": [
+          20.9,
+          6.9,
+          1.2,
+          1.2
+        ],
+        "note": "Le assi hanno ceduto. Sotto il pavimento non riesci a distinguere il fondo."
+      },
+      {
+        "id": "floor86_3",
+        "name": "Pavimento ceduto",
+        "x": 24,
+        "y": 20,
+        "kind": "furniture",
+        "paintOnly": true,
+        "footprint": [
+          24,
+          20,
+          1,
+          1
+        ],
+        "interactArea": [
+          23.9,
+          19.9,
+          1.2,
+          1.2
+        ],
+        "note": "Le assi hanno ceduto. Sotto il pavimento non riesci a distinguere il fondo."
+      },
+      {
+        "id": "decor87_casa_olmo_0",
+        "name": "Anfora incrinata",
+        "x": 3,
+        "y": 3,
+        "artFile": "art_07_anfora_grande",
+        "scale": 0.72,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo."
+      },
+      {
+        "id": "decor87_casa_olmo_1",
+        "name": "Stendardo scolorito",
+        "x": 10,
+        "y": 3,
+        "artFile": "art_32_stendardo_rosso",
+        "scale": 0.72,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo."
+      },
+      {
+        "id": "decor87_casa_olmo_2",
+        "name": "Tavolino delle medicine",
+        "x": 3,
+        "y": 9,
+        "artFile": "art_16_tavolino_libri",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "decor87_casa_olmo_4",
+        "name": "Paravento lacero",
+        "x": 19,
+        "y": 5,
+        "artFile": "art_24_paravento_tessuto",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "decor87_casa_olmo_5",
+        "name": "Sedia rovesciata",
+        "x": 26,
+        "y": 6,
+        "artFile": "art_15_sedia_legno",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "decor87_casa_olmo_6",
+        "name": "Tavolino",
+        "x": 19,
+        "y": 9,
+        "artFile": "art_16_tavolino_libri",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "decor87_casa_olmo_8",
+        "name": "Libreria devozionale",
+        "x": 3,
+        "y": 12,
+        "artFile": "art_19_libreria_antica_02",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "decor87_casa_olmo_9",
+        "name": "Ampolla votiva",
+        "x": 8,
+        "y": 15,
+        "artFile": "art_06_ampolla_01",
+        "scale": 0.72,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo."
+      },
+      {
+        "id": "decor87_casa_olmo_10",
+        "name": "Brocca dell’acqua",
+        "x": 4,
+        "y": 18,
+        "artFile": "art_07_anfora_grande",
+        "scale": 0.72,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo."
+      },
+      {
+        "id": "decor87_casa_olmo_12",
+        "name": "Armadio della cucina",
+        "x": 19,
+        "y": 13,
+        "artFile": "art_17_armadio_doppio",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "decor87_casa_olmo_13",
+        "name": "Vasetti di spezie",
+        "x": 26,
+        "y": 15,
+        "artFile": "art_10_vasetti",
+        "scale": 0.72,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo."
+      },
+      {
+        "id": "decor87_casa_olmo_14",
+        "name": "Sedia di paglia",
+        "x": 20,
+        "y": 17,
+        "artFile": "art_15_sedia_legno",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "decor87_casa_olmo_15",
+        "name": "Casse vuote",
+        "x": 26,
+        "y": 21,
+        "artFile": "art_04_cassa_doppia",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "olmo_plate92",
+        "x": 21,
+        "y": 14,
+        "name": "Piatti sporchi",
+        "artFile": "art_10_vasetti",
+        "scale": 0.84,
+        "kind": "furniture",
+        "note": "Il grasso secco conserva un odore rancido."
+      },
+      {
+        "id": "olmo_deskside92",
+        "x": 25,
+        "y": 15,
+        "name": "Scranno del cuoco",
+        "artFile": "art_15_sedia_legno",
+        "scale": 0.95,
+        "kind": "furniture",
+        "note": "La seduta è incisa da segni nervosi.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "olmo_kitchen_sack92",
+        "x": 27,
+        "y": 18,
+        "name": "Sacco di farina marcia",
+        "artFile": "art_03_sacco_tela",
+        "scale": 0.95,
+        "kind": "crate",
+        "note": "Toccarlo solleva polvere grigia."
+      },
+      {
+        "id": "olmo_prayer_books92",
+        "x": 6,
+        "y": 14,
+        "name": "Libri di preghiera bruciacchiati",
+        "artFile": "art_16_tavolino_libri",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "Le pagine parlano di una casa che ascolta."
+      },
+      {
+        "id": "olmo_broken_chair92",
+        "x": 11,
+        "y": 18,
+        "name": "Sedia spezzata",
+        "artFile": "art_15_sedia_legno",
+        "scale": 0.92,
+        "kind": "furniture",
+        "note": "Una gamba manca da tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "olmo_extra_crate92",
+        "x": 19,
+        "y": 18,
+        "name": "Cassetta per conserve",
+        "artFile": "art_01_cassa_legno_piccola",
+        "scale": 0.92,
+        "kind": "crate",
+        "note": "Tra le assi scorrono insetti pallidi."
+      },
+      {
+        "id": "olmo_corner_candles92",
+        "x": 27,
+        "y": 4,
+        "name": "Lucignoli anneriti",
+        "artFile": "art_13_candelabro_ferro",
+        "scale": 0.86,
+        "kind": "furniture",
+        "note": "Sono stati spenti con violenza."
+      },
+      {
+        "id": "olmo_kitchen_jar92",
+        "x": 22,
+        "y": 19,
+        "name": "Vasetti rotti",
+        "artFile": "art_10_vasetti",
+        "scale": 0.82,
+        "kind": "furniture",
+        "note": "I cocci conservano residui scuri."
+      }
+    ],
+    "enemies": [
+      {
+        "id": "olmo_undead_1",
+        "kind": "zombie",
+        "x": 14,
+        "y": 5
+      },
+      {
+        "id": "olmo_undead_2",
+        "kind": "zombie",
+        "x": 15,
+        "y": 6
+      },
+      {
+        "id": "olmo_undead_3",
+        "kind": "zombie",
+        "x": 23,
+        "y": 5
+      },
+      {
+        "id": "olmo_undead_4",
+        "kind": "zombie",
+        "x": 5,
+        "y": 5
+      }
+    ],
+    "polygons": [],
+    "sceneryBlocks": []
+  },
+  "casa_medico": {
+    "name": "Ambulatorio del Distretto",
+    "w": 35,
+    "h": 21,
+    "style": "house",
+    "blocks": [
+      [
+        0,
+        0,
+        35,
+        1
+      ],
+      [
+        0,
+        20,
+        35,
+        1
+      ],
+      [
+        0,
+        0,
+        2,
+        21
+      ],
+      [
+        34,
+        0,
+        1,
+        21
+      ],
+      [
+        11,
+        1,
+        2,
+        8
+      ],
+      [
+        11,
+        11,
+        2,
+        9
+      ],
+      [
+        24,
+        1,
+        2,
+        14
+      ],
+      [
+        24,
+        17,
+        2,
+        3
+      ],
+      [
+        2,
+        8,
+        7,
+        2
+      ],
+      [
+        2,
+        19,
+        6,
+        1
+      ],
+      [
+        13,
+        5,
+        4,
+        2
+      ],
+      [
+        17,
+        13,
+        7,
+        2
+      ],
+      [
+        26,
+        8,
+        7,
+        2
+      ]
+    ],
+    "doors": [
+      {
+        "id": "leave_house",
+        "x": 9,
+        "y": 19,
+        "label": "Esci sulla via",
+        "to": "strada",
+        "spawn": [
+          23,
+          15
+        ]
+      }
+    ],
+    "npcs": [],
+    "props": [
+      {
+        "id": "medic_bed",
+        "x": 4,
+        "y": 4,
+        "name": "Lettiga del triage",
+        "artFile": "art_20_letto_01",
+        "scale": 1.05,
+        "kind": "",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "paintOnly": true
+      },
+      {
+        "id": "medic_table",
+        "x": 16,
+        "y": 9,
+        "name": "Tavolo operatorio",
+        "artFile": "art_22_tavolino_medico",
+        "scale": 1.15,
+        "kind": "",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "paintOnly": true
+      },
+      {
+        "id": "medic_shelf",
+        "x": 28,
+        "y": 4,
+        "name": "Armadietto farmacologico",
+        "artFile": "art_18_libreria_antica",
+        "scale": 0.9,
+        "kind": "",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "paintOnly": true
+      },
+      {
+        "id": "medic_screen",
+        "x": 10,
+        "y": 16,
+        "name": "Paravento lacerato",
+        "artFile": "art_24_paravento_tessuto",
+        "scale": 1,
+        "kind": "",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "paintOnly": true
+      },
+      {
+        "id": "medic_cabinet",
+        "x": 15,
+        "y": 4,
+        "name": "Armadio degli strumenti",
+        "artFile": "art_17_armadio_doppio",
+        "scale": 0.9,
+        "kind": "",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "paintOnly": true
+      },
+      {
+        "id": "medic_bed2",
+        "x": 4,
+        "y": 17,
+        "name": "Letto vuoto",
+        "artFile": "art_21_letto_02",
+        "scale": 1.05,
+        "kind": "",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "paintOnly": true
+      },
+      {
+        "id": "medic_crate",
+        "x": 10,
+        "y": 9,
+        "name": "Cassa delle medicazioni",
+        "artFile": "art_11_cassa_rinforzata",
+        "scale": 0.85,
+        "kind": "crate",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "paintOnly": true
+      },
+      {
+        "id": "medic_jars",
+        "x": 22,
+        "y": 3,
+        "name": "Preparati anatomici",
+        "artFile": "art_10_vasetti",
+        "scale": 0.9,
+        "kind": "",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "paintOnly": true
+      },
+      {
+        "id": "medic_desk",
+        "x": 15,
+        "y": 19,
+        "name": "Cartelle cliniche",
+        "artFile": "art_14_tavolo_documenti",
+        "scale": 1,
+        "kind": "",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "paintOnly": true
+      },
+      {
+        "id": "medic_chair",
+        "x": 9,
+        "y": 6,
+        "name": "Sedia abbandonata",
+        "artFile": "art_15_sedia_legno",
+        "scale": 0.9,
+        "kind": "",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "paintOnly": true
+      },
+      {
+        "id": "medic_candle",
+        "x": 33,
+        "y": 3,
+        "name": "Candelabro",
+        "artFile": "art_13_candelabro_ferro",
+        "scale": 0.85,
+        "kind": "",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "paintOnly": true
+      },
+      {
+        "id": "medic_sack",
+        "x": 28,
+        "y": 18,
+        "name": "Biancheria sporca",
+        "artFile": "art_03_sacco_tela",
+        "scale": 0.9,
+        "kind": "",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "paintOnly": true
+      },
+      {
+        "id": "decor87_casa_medico_0",
+        "name": "Registro clinico",
+        "x": 3,
+        "y": 4,
+        "artFile": "art_19_libreria_antica_02",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "paintOnly": true
+      },
+      {
+        "id": "decor87_casa_medico_1",
+        "name": "Paravento operatorio",
+        "x": 8,
+        "y": 4,
+        "artFile": "art_24_paravento_tessuto",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "paintOnly": true
+      },
+      {
+        "id": "decor87_casa_medico_2",
+        "name": "Letto di isolamento",
+        "x": 4,
+        "y": 16,
+        "artFile": "art_21_letto_02",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "paintOnly": true
+      },
+      {
+        "id": "decor87_casa_medico_3",
+        "name": "Flaconi medici",
+        "x": 6,
+        "y": 15,
+        "artFile": "art_10_vasetti",
+        "scale": 0.72,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "paintOnly": true
+      },
+      {
+        "id": "decor87_casa_medico_4",
+        "name": "Armadio farmaceutico",
+        "x": 30,
+        "y": 5,
+        "artFile": "art_17_armadio_doppio",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "paintOnly": true
+      },
+      {
+        "id": "decor87_casa_medico_5",
+        "name": "Candelabro",
+        "x": 17,
+        "y": 4,
+        "artFile": "art_13_candelabro_ferro",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "paintOnly": true
+      },
+      {
+        "id": "decor87_casa_medico_6",
+        "name": "Cartelle cliniche",
+        "x": 28,
+        "y": 15,
+        "artFile": "art_16_tavolino_libri",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "paintOnly": true
+      },
+      {
+        "id": "decor87_casa_medico_7",
+        "name": "Strumenti",
+        "x": 27,
+        "y": 6,
+        "artFile": "art_22_tavolino_medico",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "paintOnly": true
+      },
+      {
+        "id": "decor87_casa_medico_8",
+        "name": "Veleni",
+        "x": 30,
+        "y": 3,
+        "artFile": "art_10_vasetti",
+        "scale": 0.72,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "paintOnly": true
+      },
+      {
+        "id": "decor87_casa_medico_9",
+        "name": "Tenda di reparto",
+        "x": 23,
+        "y": 9,
+        "artFile": "art_24_paravento_tessuto",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "paintOnly": true
+      },
+      {
+        "id": "decor87_casa_medico_10",
+        "name": "Sedia del medico",
+        "x": 8,
+        "y": 15,
+        "artFile": "art_15_sedia_legno",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "paintOnly": true
+      },
+      {
+        "id": "patient96",
+        "x": 19,
+        "y": 10,
+        "name": "Donna dei fiori",
+        "artFile": "clinic96_patient",
+        "paintOnly": true,
+        "kind": "",
+        "note": "Una donna immobile. Tra le labbra si intravedono dei fiori."
+      }
+    ],
+    "enemies": [
+      {
+        "id": "medico_undead_2",
+        "kind": "zombie",
+        "x": 15,
+        "y": 14
+      },
+      {
+        "id": "medico_undead_3",
+        "kind": "zombie",
+        "x": 29,
+        "y": 12
+      }
+    ],
+    "sceneryBlocks": [
+      [
+        4,
+        3,
+        2,
+        2
+      ],
+      [
+        6,
+        4,
+        2,
+        2
+      ],
+      [
+        2,
+        6,
+        2,
+        2
+      ],
+      [
+        9,
+        6,
+        1,
+        1
+      ],
+      [
+        3,
+        15,
+        2,
+        2
+      ],
+      [
+        5,
+        15,
+        2,
+        1
+      ],
+      [
+        9,
+        15,
+        2,
+        2
+      ],
+      [
+        14,
+        3,
+        2,
+        2
+      ],
+      [
+        16,
+        8,
+        2,
+        2
+      ],
+      [
+        18,
+        7,
+        3,
+        5
+      ],
+      [
+        22,
+        8,
+        2,
+        2
+      ],
+      [
+        27,
+        4,
+        3,
+        2
+      ],
+      [
+        30,
+        4,
+        1,
+        2
+      ],
+      [
+        27,
+        15,
+        2,
+        1
+      ],
+      [
+        31,
+        13,
+        2,
+        2
+      ],
+      [
+        15,
+        19,
+        2,
+        1
+      ]
+    ]
+  },
+  "casa_sarto": {
+    "name": "Casa del Sarto",
+    "w": 19,
+    "h": 16,
+    "style": "chapel",
+    "blocks": [
+      [
+        0,
+        0,
+        19,
+        3
+      ],
+      [
+        0,
+        0,
+        3,
+        16
+      ],
+      [
+        16,
+        0,
+        3,
+        16
+      ],
+      [
+        0,
+        15,
+        19,
+        1
+      ]
+    ],
+    "doors": [
+      {
+        "id": "leave_house",
+        "x": 15,
+        "y": 10,
+        "label": "Esci sulla via",
+        "to": "strada",
+        "spawn": [
+          12,
+          7
+        ]
+      }
+    ],
+    "npcs": [],
+    "props": [
+      {
+        "id": "sarto_lockbox",
+        "x": 7,
+        "y": 7,
+        "name": "Baule rinforzato",
+        "artFile": "art_11_cassa_rinforzata",
+        "scale": 0.84,
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "note": "Un medaglione cucito in una fodera."
+      },
+      {
+        "id": "sarto_bench",
+        "x": 12,
+        "y": 11,
+        "name": "Tavolo degli abiti",
+        "artFile": "art_14_tavolo_documenti",
+        "scale": 0.68,
+        "solid": [
+          -1,
+          0,
+          2,
+          1
+        ],
+        "note": "Una corazza leggera è stata riparata con filo nero."
+      },
+      {
+        "id": "sarto_cloth",
+        "x": 5,
+        "y": 5,
+        "name": "Tessuti ammuffiti",
+        "artFile": "art_23_stendibiancheria",
+        "scale": 1,
+        "kind": "",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "sarto_mirror",
+        "x": 12,
+        "y": 5,
+        "name": "Armadio del sarto",
+        "artFile": "art_17_armadio_doppio",
+        "scale": 1,
+        "kind": "",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "sarto_chair",
+        "x": 7,
+        "y": 12,
+        "name": "Sedia rovesciata",
+        "artFile": "art_15_sedia_legno",
+        "scale": 0.9,
+        "kind": "",
+        "note": "La polvere conserva il segno di una vita interrotta."
+      },
+      {
+        "id": "sarto_sack",
+        "x": 13,
+        "y": 12,
+        "name": "Sacco di ritagli",
+        "artFile": "art_03_sacco_tela",
+        "scale": 1,
+        "kind": "",
+        "note": "La polvere conserva il segno di una vita interrotta."
+      },
+      {
+        "id": "decor87_casa_sarto_0",
+        "name": "Scaffale dei tessuti",
+        "x": 4,
+        "y": 4,
+        "artFile": "art_19_libreria_antica_02",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "decor87_casa_sarto_1",
+        "name": "Stoffe appese",
+        "x": 10,
+        "y": 4,
+        "artFile": "art_23_stendibiancheria",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "decor87_casa_sarto_2",
+        "name": "Armadio del sarto",
+        "x": 14,
+        "y": 6,
+        "artFile": "art_17_armadio_doppio",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "decor87_casa_sarto_3",
+        "name": "Rotoli di stoffa",
+        "x": 4,
+        "y": 12,
+        "artFile": "art_12_cassone_telo",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "decor87_casa_sarto_4",
+        "name": "Cartamodelli",
+        "x": 10,
+        "y": 13,
+        "artFile": "art_16_tavolino_libri",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      }
+    ],
+    "enemies": []
+  },
+  "casa_cantina": {
+    "name": "Cantina dei Muratori",
+    "w": 19,
+    "h": 16,
+    "style": "chapel",
+    "blocks": [
+      [
+        0,
+        0,
+        19,
+        3
+      ],
+      [
+        0,
+        0,
+        3,
+        16
+      ],
+      [
+        16,
+        0,
+        3,
+        16
+      ],
+      [
+        0,
+        15,
+        19,
+        1
+      ]
+    ],
+    "doors": [
+      {
+        "id": "leave_house",
+        "x": 3,
+        "y": 10,
+        "label": "Esci sulla via",
+        "to": "strada",
+        "spawn": [
+          25,
+          18
+        ]
+      }
+    ],
+    "npcs": [],
+    "props": [
+      {
+        "id": "cantina_chest",
+        "x": 7,
+        "y": 9,
+        "name": "Armadietto del muratore",
+        "artFile": "art_11_cassa_rinforzata",
+        "scale": 0.83,
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "note": "Nel cassetto è stato nascosto un altro bastone ferrato."
+      },
+      {
+        "id": "cantina_bed",
+        "x": 11,
+        "y": 7,
+        "name": "Giaciglio coperto",
+        "artFile": "art_20_letto_01",
+        "scale": 0.68,
+        "solid": [
+          0,
+          0,
+          1,
+          2
+        ],
+        "note": "Nessuno dovrebbe dormire sotto una stazione."
+      },
+      {
+        "id": "cantina_barrel2",
+        "x": 5,
+        "y": 5,
+        "name": "Botte di vino",
+        "artFile": "art_05_barile_muschio",
+        "scale": 1,
+        "kind": "barrel",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "cantina_crate2",
+        "x": 13,
+        "y": 5,
+        "name": "Cassa marcia",
+        "artFile": "art_04_cassa_doppia",
+        "scale": 1,
+        "kind": "crate",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "cantina_jars",
+        "x": 7,
+        "y": 12,
+        "name": "Anfore",
+        "artFile": "art_07_anfora_grande",
+        "scale": 0.9,
+        "kind": "",
+        "note": "La polvere conserva il segno di una vita interrotta."
+      },
+      {
+        "id": "cantina_rubble",
+        "x": 12,
+        "y": 12,
+        "name": "Mattoni crollati",
+        "artFile": "art_42_macerie_mattoni",
+        "scale": 0.9,
+        "kind": "",
+        "note": "La polvere conserva il segno di una vita interrotta."
+      },
+      {
+        "id": "decor87_casa_cantina_0",
+        "name": "Botti",
+        "x": 4,
+        "y": 4,
+        "artFile": "art_05_barile_muschio",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "decor87_casa_cantina_1",
+        "name": "Casse",
+        "x": 9,
+        "y": 4,
+        "artFile": "art_04_cassa_doppia",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "decor87_casa_cantina_2",
+        "name": "Anfora",
+        "x": 14,
+        "y": 8,
+        "artFile": "art_07_anfora_grande",
+        "scale": 0.72,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo."
+      },
+      {
+        "id": "decor87_casa_cantina_3",
+        "name": "Sacco umido",
+        "x": 4,
+        "y": 13,
+        "artFile": "art_03_sacco_tela",
+        "scale": 0.72,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo."
+      },
+      {
+        "id": "decor87_casa_cantina_4",
+        "name": "Botte incrinata",
+        "x": 14,
+        "y": 13,
+        "artFile": "art_05_barile_muschio",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      }
+    ],
+    "enemies": []
+  },
+  "strada_bassa": {
+    "name": "Sottostrada — Corte delle Cisterne",
+    "w": 34,
+    "h": 26,
+    "style": "chapel",
+    "blocks": [
+      [
+        0,
+        0,
+        16,
+        3
+      ],
+      [
+        19,
+        0,
+        15,
+        3
+      ],
+      [
+        0,
+        0,
+        1,
+        26
+      ],
+      [
+        33,
+        0,
+        1,
+        26
+      ],
+      [
+        0,
+        25,
+        34,
+        1
+      ],
+      [
+        1,
+        2,
+        12,
+        7.8
+      ],
+      [
+        21.6,
+        2,
+        11.4,
+        8
+      ],
+      [
+        1,
+        11,
+        8.5,
+        8.7
+      ],
+      [
+        24.6,
+        11,
+        8.4,
+        8.8
+      ],
+      [
+        1,
+        21,
+        12,
+        4
+      ],
+      [
+        21,
+        21,
+        12,
+        4
+      ]
+    ],
+    "doors": [
+      {
+        "id": "up_to_street",
+        "x": 17,
+        "y": 2,
+        "label": "Scala verso la Via del Distretto",
+        "to": "strada",
+        "spawn": [
+          17,
+          21
+        ],
+        "interactArea": [
+          16.65,
+          1.3,
+          1.7,
+          1.7
+        ]
+      },
+      {
+        "id": "open_refuge",
+        "x": 8,
+        "y": 10,
+        "label": "Rifugio — porta aperta",
+        "to": "rifugio_basso",
+        "spawn": [
+          9,
+          11
+        ],
+        "interactArea": [
+          7.65,
+          9.3,
+          1.7,
+          1.7
+        ]
+      },
+      {
+        "id": "open_storage",
+        "x": 26,
+        "y": 10,
+        "label": "Magazzino — porta aperta",
+        "to": "magazzino_basso",
+        "spawn": [
+          9,
+          11
+        ],
+        "interactArea": [
+          25.65,
+          9.3,
+          1.7,
+          1.7
+        ]
+      },
+      {
+        "id": "locked_basso_1",
+        "x": 8,
+        "y": 19,
+        "label": "Officina — lucchetto",
+        "to": "officina_bassa",
+        "spawn": [
+          9,
+          11
+        ],
+        "interactArea": [
+          7.65,
+          18.3,
+          1.7,
+          1.7
+        ]
+      },
+      {
+        "id": "locked_basso_2",
+        "x": 26,
+        "y": 20,
+        "label": "Archivio — lucchetto",
+        "to": "archivio_basso",
+        "spawn": [
+          9,
+          11
+        ],
+        "interactArea": [
+          25.65,
+          19.3,
+          1.7,
+          1.7
+        ]
+      }
+    ],
+    "npcs": [],
+    "props": [
+      {
+        "id": "basso_crate_1",
+        "x": 10,
+        "y": 13,
+        "name": "Cassa umida",
+        "artFile": "art_08_cassa_telo",
+        "scale": 1,
+        "kind": "crate",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "basso_barrel_1",
+        "x": 23,
+        "y": 16,
+        "name": "Barile annerito",
+        "artFile": "art_05_barile_muschio",
+        "scale": 1,
+        "kind": "barrel",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "basso_table_1",
+        "x": 20,
+        "y": 8,
+        "name": "Banco abbandonato",
+        "artFile": "art_14_tavolo_documenti",
+        "scale": 1,
+        "kind": "",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "solid": [
+          -1,
+          0,
+          2,
+          1
+        ]
+      },
+      {
+        "id": "basso_cistern",
+        "x": 15,
+        "y": 11,
+        "name": "Cisterna antica",
+        "artFile": "art_29_fontana_piccola",
+        "scale": 1.3,
+        "kind": "",
+        "note": "L’acqua ristagna tra foglie annerite. Sotto la superficie qualcosa riflette il cielo, ma non le nuvole.",
+        "paintOnly": true,
+        "interactArea": [
+          13.3,
+          9.9,
+          3.7,
+          3.5
+        ]
+      },
+      {
+        "id": "basso_cart",
+        "x": 11,
+        "y": 16,
+        "name": "Carro rovesciato",
+        "artFile": "art_09_carretto_vuoto",
+        "scale": 0.76,
+        "kind": "",
+        "note": "La polvere conserva il segno di una vita interrotta."
+      },
+      {
+        "id": "basso_lamp",
+        "x": 13,
+        "y": 5,
+        "name": "Lanterna spenta",
+        "artFile": "art_13_candelabro_ferro",
+        "scale": 1,
+        "kind": "",
+        "note": "La polvere conserva il segno di una vita interrotta."
+      },
+      {
+        "id": "basso_rubble",
+        "x": 23,
+        "y": 20,
+        "name": "Macerie",
+        "artFile": "art_42_macerie_mattoni",
+        "scale": 1,
+        "kind": "",
+        "note": "La polvere conserva il segno di una vita interrotta."
+      },
+      {
+        "id": "decor87_strada_bassa_0",
+        "name": "Calcinacci",
+        "x": 13,
+        "y": 9,
+        "artFile": "art_42_macerie_mattoni",
+        "scale": 0.72,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo."
+      },
+      {
+        "id": "decor87_strada_bassa_1",
+        "name": "Anfora rotta",
+        "x": 22,
+        "y": 12,
+        "artFile": "art_07_anfora_grande",
+        "scale": 0.72,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo."
+      },
+      {
+        "id": "decor87_strada_bassa_2",
+        "name": "Sacco abbandonato",
+        "x": 11,
+        "y": 19,
+        "artFile": "art_03_sacco_tela",
+        "scale": 0.72,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo."
+      },
+      {
+        "id": "decor87_strada_bassa_3",
+        "name": "Pilastro",
+        "x": 23,
+        "y": 14,
+        "artFile": "art_36_colonna_singola",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "decor87_strada_bassa_4",
+        "name": "Pilastro spezzato",
+        "x": 13,
+        "y": 23,
+        "artFile": "art_41_pilastro_rovinato",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "decor87_strada_bassa_5",
+        "name": "Macerie",
+        "x": 20,
+        "y": 23,
+        "artFile": "art_42_macerie_mattoni",
+        "scale": 0.72,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo."
+      },
+      {
+        "id": "decor87_strada_bassa_6",
+        "name": "Catena di ferro",
+        "x": 19,
+        "y": 5,
+        "artFile": "art_37_catene_pilastrini",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      }
+    ],
+    "enemies": [
+      {
+        "id": "basso_undead_4",
+        "kind": "zombie",
+        "x": 17,
+        "y": 15
+      },
+      {
+        "id": "basso_undead_5",
+        "kind": "zombie",
+        "x": 13,
+        "y": 8
+      }
+    ],
+    "polygons": [
+      [
+        [
+          13.3,
+          10.6
+        ],
+        [
+          14.4,
+          9.9
+        ],
+        [
+          16,
+          10
+        ],
+        [
+          17,
+          10.8
+        ],
+        [
+          17,
+          12.9
+        ],
+        [
+          16.2,
+          13.4
+        ],
+        [
+          14.3,
+          13.4
+        ],
+        [
+          13.3,
+          12.5
+        ]
+      ],
+      [
+        [
+          16.6,
+          16.8
+        ],
+        [
+          17.6,
+          16.2
+        ],
+        [
+          19.2,
+          16.2
+        ],
+        [
+          20.4,
+          17.1
+        ],
+        [
+          20.5,
+          18.8
+        ],
+        [
+          19.5,
+          19.6
+        ],
+        [
+          17.6,
+          19.6
+        ],
+        [
+          16.6,
+          18.8
+        ]
+      ]
+    ]
+  },
+  "rifugio_basso": {
+    "name": "Rifugio allagato",
+    "w": 18,
+    "h": 14,
+    "style": "chapel",
+    "blocks": [
+      [
+        0,
+        0,
+        18,
+        2
+      ],
+      [
+        0,
+        13,
+        18,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        14
+      ],
+      [
+        17,
+        0,
+        1,
+        14
+      ],
+      [
+        8,
+        2,
+        1,
+        4
+      ],
+      [
+        8,
+        8,
+        1,
+        2
+      ],
+      [
+        1,
+        6,
+        3,
+        1
+      ],
+      [
+        14,
+        8,
+        3,
+        1
+      ]
+    ],
+    "doors": [
+      {
+        "id": "leave_rifugio_basso",
+        "x": 9,
+        "y": 12,
+        "label": "Torna nel Sottostrada",
+        "to": "strada_bassa",
+        "spawn": [
+          8,
+          10
+        ]
+      }
+    ],
+    "npcs": [],
+    "props": [
+      {
+        "id": "rifugio_basso_crate",
+        "x": 5,
+        "y": 9,
+        "name": "Cassa dimenticata",
+        "artFile": "art_02_baule_tavole",
+        "scale": 0.9,
+        "kind": "crate",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "rifugio_basso_shelf",
+        "x": 14,
+        "y": 4,
+        "name": "Scaffale",
+        "artFile": "art_19_libreria_antica_02",
+        "scale": 0.9,
+        "kind": "",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "rifugio_basso_table",
+        "x": 5,
+        "y": 4,
+        "name": "Tavolo consunto",
+        "artFile": "art_14_tavolo_documenti",
+        "scale": 1,
+        "kind": "",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "solid": [
+          -1,
+          0,
+          2,
+          1
+        ]
+      },
+      {
+        "id": "rifugio_basso_barrel",
+        "x": 13,
+        "y": 10,
+        "name": "Barile",
+        "artFile": "art_05_barile_muschio",
+        "scale": 0.9,
+        "kind": "barrel",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "basso_training",
+        "x": 12,
+        "y": 7,
+        "name": "Manuale del fabbro",
+        "artFile": "art_16_tavolino_libri",
+        "scale": 0.9,
+        "kind": "",
+        "note": "Un manuale di scassinaggio è aperto su una pagina consumata."
+      },
+      {
+        "id": "basso_bed",
+        "x": 3,
+        "y": 7,
+        "name": "Giaccio fradicio",
+        "artFile": "art_20_letto_01",
+        "scale": 1,
+        "kind": "",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "decor87_rifugio_basso_0",
+        "name": "Branda",
+        "x": 2,
+        "y": 3,
+        "artFile": "art_21_letto_02",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "decor87_rifugio_basso_1",
+        "name": "Medicinali",
+        "x": 6,
+        "y": 3,
+        "artFile": "art_10_vasetti",
+        "scale": 0.72,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo."
+      },
+      {
+        "id": "decor87_rifugio_basso_2",
+        "name": "Armadio",
+        "x": 2,
+        "y": 10,
+        "artFile": "art_17_armadio_doppio",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "L’anta è gonfia d’acqua. Fra le lenzuola sembra esserci una cucitura recente.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "decor87_rifugio_basso_3",
+        "name": "Tenda",
+        "x": 15,
+        "y": 3,
+        "artFile": "art_24_paravento_tessuto",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "decor87_rifugio_basso_4",
+        "name": "Sacco di provviste",
+        "x": 15,
+        "y": 10,
+        "artFile": "art_03_sacco_tela",
+        "scale": 0.72,
+        "kind": "crate",
+        "note": "Un sacco cerato, legato con una cordicella."
+      },
+      {
+        "id": "refuge89_medicine",
+        "x": 3,
+        "y": 4,
+        "artFile": "art_22_tavolino_medico",
+        "name": "Comodino delle cure",
+        "note": "Due flaconi sigillati sono rimasti fra le garze.",
+        "scale": 0.76,
+        "kind": "loot89",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "refuge89_supply",
+        "x": 5,
+        "y": 11,
+        "artFile": "art_12_cassone_telo",
+        "name": "Cassone delle razioni",
+        "note": "Il coperchio è avvolto in tela cerata. Qualcosa si conserva ancora.",
+        "scale": 0.82,
+        "kind": "loot89",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "refuge89_altar",
+        "x": 11,
+        "y": 3,
+        "artFile": "art_28_statua_santo",
+        "name": "Santo dal volto velato",
+        "note": "Qualcuno ha avvolto il volto del santo con un drappo. Ai piedi, sette chiodi arrugginiti.",
+        "scale": 0.84,
+        "kind": "furniture",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "refuge89_votive",
+        "x": 12,
+        "y": 3,
+        "artFile": "art_13_candelabro_ferro",
+        "name": "Candelabro votivo",
+        "note": "La cera si è rappresa in forme simili a dita.",
+        "scale": 0.72,
+        "kind": "furniture",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "refuge89_cabinet",
+        "x": 15,
+        "y": 5,
+        "artFile": "art_25_credenza_stoviglie",
+        "name": "Credenza delle stoviglie",
+        "note": "Fra piatti incrinati e tazze fredde rimane un involto.",
+        "scale": 0.82,
+        "kind": "loot89",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "refuge89_seat",
+        "x": 7,
+        "y": 5,
+        "artFile": "art_15_sedia_legno",
+        "name": "Sedia vuota",
+        "note": "Il legno è ancora tiepido, benché la stanza sia gelida.",
+        "scale": 0.72,
+        "kind": "furniture",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "refuge89_banner",
+        "x": 10,
+        "y": 2,
+        "artFile": "art_32_stendardo_rosso",
+        "name": "Stendardo delle veglie",
+        "note": "La scritta è stata ricamata al contrario: NON RISPONDETE.",
+        "scale": 0.85,
+        "kind": "furniture"
+      },
+      {
+        "id": "refuge89_basin",
+        "x": 11,
+        "y": 10,
+        "artFile": "art_07_anfora_grande",
+        "name": "Anfora delle acque",
+        "note": "L’acqua all’interno non riflette il soffitto.",
+        "scale": 0.78,
+        "kind": "furniture",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "refuge89_bench",
+        "x": 6,
+        "y": 8,
+        "artFile": "art_26_panca_bassa",
+        "name": "Panca dei superstiti",
+        "note": "Sulla seduta sono incise tre file di tacche.",
+        "scale": 0.8,
+        "kind": "furniture",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "refuge89_bundle",
+        "x": 15,
+        "y": 11,
+        "artFile": "art_08_cassa_telo",
+        "name": "Involto sotto il telo",
+        "note": "Qualcuno ha nascosto qui le ultime provviste.",
+        "scale": 0.72,
+        "kind": "loot89",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "refuge89_clock",
+        "x": 2,
+        "y": 5,
+        "artFile": "art_31_orologio_piedistallo",
+        "name": "Orologio fermo",
+        "note": "Le lancette indicano le 03:17. Il pendolo non si muove.",
+        "scale": 0.75,
+        "kind": "furniture",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "refuge89_books",
+        "x": 13,
+        "y": 6,
+        "artFile": "art_16_tavolino_libri",
+        "name": "Diario delle veglie",
+        "note": "I nomi dei rifugiati sono cancellati uno per uno. L’ultimo spazio è vuoto.",
+        "scale": 0.76,
+        "kind": "furniture",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      }
+    ],
+    "enemies": []
+  },
+  "magazzino_basso": {
+    "name": "Magazzino del Carbonaio",
+    "w": 18,
+    "h": 14,
+    "style": "chapel",
+    "blocks": [
+      [
+        0,
+        0,
+        18,
+        2
+      ],
+      [
+        0,
+        13,
+        18,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        14
+      ],
+      [
+        17,
+        0,
+        1,
+        14
+      ],
+      [
+        8,
+        2,
+        1,
+        4
+      ],
+      [
+        8,
+        8,
+        1,
+        2
+      ],
+      [
+        1,
+        6,
+        3,
+        1
+      ],
+      [
+        14,
+        8,
+        3,
+        1
+      ]
+    ],
+    "doors": [
+      {
+        "id": "leave_magazzino_basso",
+        "x": 9,
+        "y": 12,
+        "label": "Torna nel Sottostrada",
+        "to": "strada_bassa",
+        "spawn": [
+          26,
+          10
+        ]
+      }
+    ],
+    "npcs": [],
+    "props": [
+      {
+        "id": "magazzino_basso_crate",
+        "x": 5,
+        "y": 9,
+        "name": "Cassa dimenticata",
+        "artFile": "art_02_baule_tavole",
+        "scale": 0.9,
+        "kind": "crate",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "magazzino_basso_shelf",
+        "x": 14,
+        "y": 4,
+        "name": "Scaffale",
+        "artFile": "art_19_libreria_antica",
+        "scale": 0.9,
+        "kind": "",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "magazzino_basso_table",
+        "x": 5,
+        "y": 4,
+        "name": "Tavolo consunto",
+        "artFile": "art_14_tavolo_documenti",
+        "scale": 1,
+        "kind": "",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "solid": [
+          -1,
+          0,
+          2,
+          1
+        ]
+      },
+      {
+        "id": "magazzino_basso_barrel",
+        "x": 13,
+        "y": 10,
+        "name": "Barile",
+        "artFile": "art_05_barile_muschio",
+        "scale": 0.9,
+        "kind": "barrel",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "decor87_magazzino_basso_0",
+        "name": "Casse impilate",
+        "x": 2,
+        "y": 3,
+        "artFile": "art_04_cassa_doppia",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "decor87_magazzino_basso_1",
+        "name": "Barili",
+        "x": 6,
+        "y": 3,
+        "artFile": "art_05_barile_muschio",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "decor87_magazzino_basso_2",
+        "name": "Cassone coperto",
+        "x": 2,
+        "y": 10,
+        "artFile": "art_12_cassone_telo",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "decor87_magazzino_basso_3",
+        "name": "Casse di carbone",
+        "x": 11,
+        "y": 3,
+        "artFile": "art_04_cassa_doppia",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "decor87_magazzino_basso_4",
+        "name": "Sacco di carbone",
+        "x": 15,
+        "y": 6,
+        "artFile": "art_03_sacco_tela",
+        "scale": 0.72,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo."
+      },
+      {
+        "id": "decor87_magazzino_basso_5",
+        "name": "Cassa rinforzata",
+        "x": 15,
+        "y": 10,
+        "artFile": "art_11_cassa_rinforzata",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      }
+    ],
+    "enemies": [
+      {
+        "id": "basso_undead_6",
+        "kind": "zombie",
+        "x": 12,
+        "y": 5
+      }
+    ]
+  },
+  "officina_bassa": {
+    "name": "Officina del fabbro",
+    "w": 18,
+    "h": 14,
+    "style": "chapel",
+    "blocks": [
+      [
+        0,
+        0,
+        18,
+        2
+      ],
+      [
+        0,
+        13,
+        18,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        14
+      ],
+      [
+        17,
+        0,
+        1,
+        14
+      ],
+      [
+        8,
+        2,
+        1,
+        4
+      ],
+      [
+        8,
+        8,
+        1,
+        2
+      ],
+      [
+        1,
+        6,
+        3,
+        1
+      ],
+      [
+        14,
+        8,
+        3,
+        1
+      ]
+    ],
+    "doors": [
+      {
+        "id": "leave_officina_bassa",
+        "x": 9,
+        "y": 12,
+        "label": "Torna nel Sottostrada",
+        "to": "strada_bassa",
+        "spawn": [
+          9,
+          20
+        ]
+      }
+    ],
+    "npcs": [],
+    "props": [
+      {
+        "id": "officina_bassa_crate",
+        "x": 5,
+        "y": 9,
+        "name": "Cassa dimenticata",
+        "artFile": "art_02_baule_tavole",
+        "scale": 0.9,
+        "kind": "crate",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "officina_bassa_shelf",
+        "x": 14,
+        "y": 4,
+        "name": "Scaffale",
+        "artFile": "art_19_libreria_antica",
+        "scale": 0.9,
+        "kind": "",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "officina_bassa_table",
+        "x": 5,
+        "y": 4,
+        "name": "Tavolo consunto",
+        "artFile": "art_14_tavolo_documenti",
+        "scale": 1,
+        "kind": "",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "solid": [
+          -1,
+          0,
+          2,
+          1
+        ]
+      },
+      {
+        "id": "officina_bassa_barrel",
+        "x": 13,
+        "y": 10,
+        "name": "Barile",
+        "artFile": "art_05_barile_muschio",
+        "scale": 0.9,
+        "kind": "barrel",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "officina_tools",
+        "x": 12,
+        "y": 7,
+        "name": "Utensili del fabbro",
+        "artFile": "art_22_tavolino_medico",
+        "scale": 1,
+        "kind": "",
+        "note": "La polvere conserva il segno di una vita interrotta."
+      },
+      {
+        "id": "decor87_officina_bassa_0",
+        "name": "Cassa di ferri",
+        "x": 2,
+        "y": 3,
+        "artFile": "art_11_cassa_rinforzata",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "decor87_officina_bassa_1",
+        "name": "Banco da lavoro",
+        "x": 6,
+        "y": 3,
+        "artFile": "art_14_tavolo_documenti",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "decor87_officina_bassa_2",
+        "name": "Barile di raffreddamento",
+        "x": 2,
+        "y": 10,
+        "artFile": "art_05_barile_muschio",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "decor87_officina_bassa_3",
+        "name": "Armadio attrezzi",
+        "x": 11,
+        "y": 3,
+        "artFile": "art_17_armadio_doppio",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "decor87_officina_bassa_4",
+        "name": "Oli",
+        "x": 15,
+        "y": 6,
+        "artFile": "art_10_vasetti",
+        "scale": 0.72,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo."
+      },
+      {
+        "id": "decor87_officina_bassa_5",
+        "name": "Sacco di minerali",
+        "x": 15,
+        "y": 10,
+        "artFile": "art_03_sacco_tela",
+        "scale": 0.72,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo."
+      }
+    ],
+    "enemies": []
+  },
+  "archivio_basso": {
+    "name": "Archivio delle cisterne",
+    "w": 18,
+    "h": 14,
+    "style": "chapel",
+    "blocks": [
+      [
+        0,
+        0,
+        18,
+        2
+      ],
+      [
+        0,
+        13,
+        18,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        14
+      ],
+      [
+        17,
+        0,
+        1,
+        14
+      ],
+      [
+        8,
+        2,
+        1,
+        4
+      ],
+      [
+        8,
+        8,
+        1,
+        2
+      ],
+      [
+        1,
+        6,
+        3,
+        1
+      ],
+      [
+        14,
+        8,
+        3,
+        1
+      ]
+    ],
+    "doors": [
+      {
+        "id": "leave_archivio_basso",
+        "x": 9,
+        "y": 12,
+        "label": "Torna nel Sottostrada",
+        "to": "strada_bassa",
+        "spawn": [
+          26,
+          20
+        ]
+      }
+    ],
+    "npcs": [
+      {
+        "id": "archivio_unknown99",
+        "name": "????",
+        "portrait": "",
+        "x": 11,
+        "y": 6
+      }
+    ],
+    "props": [
+      {
+        "id": "archivio_basso_crate",
+        "x": 5,
+        "y": 9,
+        "name": "Cassa dimenticata",
+        "artFile": "art_02_baule_tavole",
+        "scale": 0.9,
+        "kind": "crate",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "archivio_basso_shelf",
+        "x": 14,
+        "y": 4,
+        "name": "Scaffale",
+        "artFile": "art_19_libreria_antica",
+        "scale": 0.9,
+        "kind": "",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "archivio_basso_table",
+        "x": 5,
+        "y": 4,
+        "name": "Tavolo consunto",
+        "artFile": "art_14_tavolo_documenti",
+        "scale": 1,
+        "kind": "",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "solid": [
+          -1,
+          0,
+          2,
+          1
+        ]
+      },
+      {
+        "id": "archivio_basso_barrel",
+        "x": 13,
+        "y": 10,
+        "name": "Barile",
+        "artFile": "art_05_barile_muschio",
+        "scale": 0.9,
+        "kind": "barrel",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "archivio_docs",
+        "x": 12,
+        "y": 7,
+        "name": "Registro delle cisterne",
+        "artFile": "art_16_tavolino_libri",
+        "scale": 1,
+        "kind": "",
+        "note": "Le date sono state cancellate. Una sola frase rimane: la terza campana non deve suonare."
+      },
+      {
+        "id": "decor87_archivio_basso_0",
+        "name": "Registri",
+        "x": 2,
+        "y": 3,
+        "artFile": "art_19_libreria_antica_02",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "decor87_archivio_basso_1",
+        "name": "Archivio dei nomi",
+        "x": 6,
+        "y": 3,
+        "artFile": "art_18_libreria_antica",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "decor87_archivio_basso_2",
+        "name": "Carte contabili",
+        "x": 2,
+        "y": 10,
+        "artFile": "art_16_tavolino_libri",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "decor87_archivio_basso_3",
+        "name": "Scaffale dei debiti",
+        "x": 11,
+        "y": 3,
+        "artFile": "art_19_libreria_antica_02",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "decor87_archivio_basso_4",
+        "name": "Cronache",
+        "x": 15,
+        "y": 6,
+        "artFile": "art_18_libreria_antica",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "decor87_archivio_basso_5",
+        "name": "Armadio chiuso",
+        "x": 15,
+        "y": 10,
+        "artFile": "art_17_armadio_doppio",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      }
+    ],
+    "enemies": []
+  },
+  "casa_olmo_servizio": {
+    "name": "Casa dell’Olmo — stanza di servizio",
+    "w": 19,
+    "h": 16,
+    "style": "chapel",
+    "blocks": [
+      [
+        0,
+        0,
+        19,
+        2
+      ],
+      [
+        0,
+        15,
+        19,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        16
+      ],
+      [
+        18,
+        0,
+        1,
+        16
+      ],
+      [
+        8,
+        2,
+        1,
+        5
+      ],
+      [
+        8,
+        9,
+        1,
+        3
+      ]
+    ],
+    "doors": [
+      {
+        "id": "return_olmo",
+        "x": 10,
+        "y": 13,
+        "label": "Torna nella Casa dell’Olmo",
+        "to": "casa_olmo",
+        "spawn": [
+          14,
+          3
+        ]
+      }
+    ],
+    "npcs": [],
+    "props": [
+      {
+        "id": "olmo_service_crate",
+        "x": 7,
+        "y": 6,
+        "name": "Cassa di servizio",
+        "artFile": "art_02_baule_tavole",
+        "scale": 0.75,
+        "kind": "crate",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "service_bed",
+        "x": 4,
+        "y": 4,
+        "name": "Lettiga",
+        "artFile": "art_21_letto_02",
+        "scale": 0.95,
+        "kind": "",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "service_shelf",
+        "x": 14,
+        "y": 4,
+        "name": "Scaffale",
+        "artFile": "art_19_libreria_antica",
+        "scale": 0.9,
+        "kind": "",
+        "note": "La polvere conserva il segno di una vita interrotta.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "olmo_desk92",
+        "x": 13,
+        "y": 11,
+        "name": "Scrivania dell’Olmo",
+        "artFile": "art_14_tavolo_documenti",
+        "scale": 1.0,
+        "kind": "",
+        "note": "Carte umide e cassetti gonfi di muffa.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "decor87_casa_olmo_servizio_0",
+        "name": "Armadio delle lenzuola",
+        "x": 2,
+        "y": 3,
+        "artFile": "art_17_armadio_doppio",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "decor87_casa_olmo_servizio_1",
+        "name": "Flaconi",
+        "x": 6,
+        "y": 3,
+        "artFile": "art_10_vasetti",
+        "scale": 0.72,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo."
+      },
+      {
+        "id": "decor87_casa_olmo_servizio_2",
+        "name": "Paravento",
+        "x": 3,
+        "y": 10,
+        "artFile": "art_24_paravento_tessuto",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "decor87_casa_olmo_servizio_3",
+        "name": "Credenza",
+        "x": 6,
+        "y": 13,
+        "artFile": "art_25_credenza_stoviglie",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "decor87_casa_olmo_servizio_4",
+        "name": "Libreria",
+        "x": 12,
+        "y": 3,
+        "artFile": "art_19_libreria_antica_02",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "decor87_casa_olmo_servizio_5",
+        "name": "Anfora",
+        "x": 16,
+        "y": 6,
+        "artFile": "art_07_anfora_grande",
+        "scale": 0.72,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo."
+      },
+      {
+        "id": "decor87_casa_olmo_servizio_6",
+        "name": "Casse di servizio",
+        "x": 16,
+        "y": 12,
+        "artFile": "art_04_cassa_doppia",
+        "scale": 0.88,
+        "kind": "furniture",
+        "note": "La polvere è più spessa lungo i bordi. Sembra che nessuno abbia toccato questo oggetto da molto tempo.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "olmo_service_candles92",
+        "x": 9,
+        "y": 4,
+        "name": "Candele consumate",
+        "artFile": "art_13_candelabro_ferro",
+        "scale": 0.92,
+        "kind": "furniture",
+        "note": "La cera è colata fin quasi al pavimento.",
+        "paintOnly": false
+      },
+      {
+        "id": "olmo_service_sack92",
+        "x": 15,
+        "y": 13,
+        "name": "Sacco di biancheria",
+        "artFile": "art_03_sacco_tela",
+        "scale": 0.9,
+        "kind": "crate",
+        "note": "Tessuti sporchi, odore di chiuso.",
+        "paintOnly": false
+      },
+      {
+        "id": "olmo_service_bench92",
+        "x": 10,
+        "y": 12,
+        "name": "Sedia spostata",
+        "artFile": "art_15_sedia_legno",
+        "scale": 0.9,
+        "kind": "furniture",
+        "note": "Qualcuno si è alzato in fretta.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "olmo_service_ward92",
+        "x": 2,
+        "y": 8,
+        "name": "Credenza per ferri",
+        "artFile": "art_25_credenza_stoviglie",
+        "scale": 0.95,
+        "kind": "furniture",
+        "note": "Dentro restano bende secche e ferri ossidati.",
+        "solid": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "olmo_service_books92",
+        "x": 11,
+        "y": 5,
+        "name": "Registri gonfi d'acqua",
+        "artFile": "art_16_tavolino_libri",
+        "scale": 0.9,
+        "kind": "furniture",
+        "note": "Pagine gonfie e annotazioni illeggibili."
+      }
+    ],
+    "enemies": []
+  }
+}

@@ -1,0 +1,14 @@
+using System;
+using Godot;
+public partial class GameRoot {
+ private AudioStreamPlayer? emileVoice104,emileBed104,emileBell106;
+ private AudioStreamWav? EmileAudio104(string id){string name="emile104_"+id+".wav";string ext=System.IO.Path.Combine(OS.GetExecutablePath().GetBaseDir(),"v8_assets",name);return System.IO.File.Exists(ext)?AudioStreamWav.LoadFromFile(ext):ResourceLoader.Exists("res://Assets/"+name)?GD.Load<AudioStreamWav>("res://Assets/"+name):null;}
+ private void EmileStart104(){if(emileVoice104==null){emileVoice104=new AudioStreamPlayer();AddChild(emileVoice104);emileBed104=new AudioStreamPlayer();AddChild(emileBed104);emileBell106=new AudioStreamPlayer();AddChild(emileBell106);}EmileStop104();if(emileScene103==0||emileScene103==4||emileScene103==5){var stream=EmileAudio104(emileScene103>=4?"choir":"rain");if(stream!=null){stream.LoopBegin=0;stream.LoopEnd=(int)(stream.GetLength()*stream.MixRate);stream.LoopMode=AudioStreamWav.LoopModeEnum.Forward;emileBed104!.Stream=stream;emileBed104.VolumeDb=-23;emileBed104.Play();}}if(emileScene103==4&&emileBell106!=null){emileBell106.Stream=EmileAudio104("funeralbell");emileBell106.VolumeDb=-12;if(emileBell106.Stream!=null)emileBell106.Play();}}
+ private void EmileStop104(){emileVoice104?.Stop();emileBed104?.Stop();emileBell106?.Stop();}
+ private string EmileCueName104()=> (emileScene103,emileBeat103) switch{(0,1)=>"sob",(0,2)=>"mother",(0,3)=>"sob",(1,3)=>"baby",(1,4)=>"mother2",(1,6)=>"sob",(2,3)=>"breath",(3,4)=>"breath",(4,3)=>"sob",(4,5)=>"wail",(4,6)=>"sob",(5,0)=>"breath",_=>""};
+ private void EmileCue104(){string cue=EmileCueName104();if(cue==""||emileVoice104==null)return;var stream=EmileAudio104(cue);if(stream==null)return;emileVoice104.Stop();emileVoice104.Stream=stream;emileVoice104.VolumeDb=cue.StartsWith("mother",StringComparison.Ordinal)?-14:-17;emileVoice104.Play();}
+ private void EmileUpdate104(float dt){if(emileBell106!=null){emileBell106.StreamPaused=!DisplayServer.WindowIsFocused();emileBell106.VolumeDb=Mathf.MoveToward(emileBell106.VolumeDb,emileStage103==4?-48:-12,dt*16);}if(emileVoice104!=null)emileVoice104.StreamPaused=!DisplayServer.WindowIsFocused();if(emileBed104!=null){emileBed104.StreamPaused=!DisplayServer.WindowIsFocused();emileBed104.VolumeDb=Mathf.MoveToward(emileBed104.VolumeDb,emileStage103==4?-42:-23,dt*12);}}
+ private void DrawEmileAtmos104(int ch){float t=emileTotal103;
+ if(ch==1||ch==5){for(int i=0;i<17;i++){float x=80+Mathf.PosMod(i*79.3f+Mathf.Sin(t*.7f+i)*25,1120),y=55+Mathf.PosMod(i*42.1f+t*(8+i%3*4),421);DrawSetTransform(new Vector2(x,y),t*.4f+i);DrawRect(new Rect2(-3,-1.5f,6,3),new Color(.42f,.13f,.18f,.42f));DrawSetTransform(Vector2.Zero);}}
+ if(ch==4&&emileBeat103==5&&emileStage103==1){Rect(24,40,1232,444,new Color(.12f,.08f,.12f,.08f+.03f*Mathf.Sin(t*1.5f)));}}
+}

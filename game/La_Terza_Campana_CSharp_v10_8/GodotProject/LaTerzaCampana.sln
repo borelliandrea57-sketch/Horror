@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaTerzaCampana", "LaTerzaCampana.csproj", "{623F157A-E061-4C46-9188-E79F81E90421}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaTerzaCampana.Core", "..\Core\LaTerzaCampana.Core.csproj", "{4759E1B3-0B8A-451B-8E24-20AE9C6542BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{623F157A-E061-4C46-9188-E79F81E90421}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{623F157A-E061-4C46-9188-E79F81E90421}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{623F157A-E061-4C46-9188-E79F81E90421}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{623F157A-E061-4C46-9188-E79F81E90421}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{4759E1B3-0B8A-451B-8E24-20AE9C6542BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4759E1B3-0B8A-451B-8E24-20AE9C6542BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4759E1B3-0B8A-451B-8E24-20AE9C6542BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4759E1B3-0B8A-451B-8E24-20AE9C6542BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
