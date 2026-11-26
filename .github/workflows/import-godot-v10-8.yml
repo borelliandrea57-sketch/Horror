@@ -1,0 +1,56 @@
+name: Importa sorgente Godot v10.8
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/import-godot-v10-8.yml'
+permissions:
+  contents: write
+concurrency:
+  group: import-godot-v10-8
+  cancel-in-progress: false
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Scarica e verifica archivio originale
+        run: |
+          curl --fail --location --retry 3 --output "$RUNNER_TEMP/source.zip" 'https://github.com/borelliandrea57-sketch/Horror/releases/download/hhh/La_Terza_Campana_Godot_CSharp_v10_8_Sorgente.zip'
+          echo "732bdd23195f38842d4a68a619673c6e6469881e9483e2b8218d0fd1f306216d  $RUNNER_TEMP/source.zip" | sha256sum --check
+      - name: Estrai senza eseguire codice del gioco
+        run: |
+          python3 - <<'PY'
+          import os, pathlib, zipfile, stat
+          dest = pathlib.Path('game')
+          if dest.exists():
+              raise SystemExit("game/ esiste già: importazione annullata per non sovrascrivere il lavoro.")
+          with zipfile.ZipFile(pathlib.Path(os.environ['RUNNER_TEMP']) / 'source.zip') as z:
+              seen = set()
+              projects = []
+              for e in z.infolist():
+                  p = pathlib.PurePosixPath(e.filename)
+                  if p.is_absolute() or '..' in p.parts or '\\' in e.filename or any(x.lower()=='.git' for x in p.parts) or stat.S_ISLNK(e.external_attr >> 16):
+                      raise SystemExit(f"Percorso non ammesso: {e.filename}")
+                  if str(p) in seen:
+                      raise SystemExit(f"Percorso duplicato: {e.filename}")
+                  seen.add(str(p))
+                  if e.file_size > 100 * 1024 * 1024:
+                      raise SystemExit(f"File oltre limite GitHub: {e.filename}")
+                  if p.name == 'project.godot':
+                      projects.append(str(p))
+              if not projects or not any(x.endswith('.cs') for x in seen):
+                  raise SystemExit("Archivio senza progetto Godot o sorgente C#.")
+              z.extractall(dest)
+              print('Progetti trovati:', projects)
+              print('Elementi estratti:', len(seen))
+          PY
+      - name: Commit del sorgente
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add --force -- game/
+          git diff --cached --stat | tail -n 20
+          git commit -m "Importa sorgente originale Godot v10.8 dalla release hhh"
+          git push origin HEAD:main
