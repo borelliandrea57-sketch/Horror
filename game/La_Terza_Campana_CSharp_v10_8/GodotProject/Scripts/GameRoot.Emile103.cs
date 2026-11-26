@@ -27,7 +27,7 @@ public partial class GameRoot {
   if(emileStage103==3){float a=Mathf.Sin(Mathf.Clamp(t/2.7f,0,1)*Mathf.Pi);p+=new Vector2((emileChoice103==0?-14:19)*a,4*a);tilt=-.12f*a;}
   if(ch==0){DrawNpc61("mother",new Vector2(472,407),emileBeat103==2||emileStage103==3&&emileChoice103==0?2:1,(int)(tick*3)%8,70,97);DrawNpc61("neri",new Vector2(855,418),1,(int)(tick*3)%8,74,105);}
   if(ch==1){
-   if(emileBeat103>=3&&emileStage103!=0)DrawNpc61("mother",new Vector2(875,385),emileBeat103>=4?1:3,(int)(tick*3)%8,70,96);
+   // The mother's dialogue remains; the foreground mother sprite is omitted from this memory.
    float appear=emileStage103==0?EaseEmile103(t/2):1f;
    float presence=emileBeat103==3||emileBeat103==4?.46f:.93f;
    float sway=Mathf.Sin(emileTotal103*1.1f)*5,bob=Mathf.Sin(emileTotal103*1.65f)*6;

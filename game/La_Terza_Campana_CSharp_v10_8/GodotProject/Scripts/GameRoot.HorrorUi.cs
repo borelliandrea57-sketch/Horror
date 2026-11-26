@@ -127,10 +127,7 @@ public partial class GameRoot
             ForgedCorner(x+5,149,1,1);ForgedCorner(x+width+5,149,-1,1);ForgedCorner(x+5,483,1,-1);ForgedCorner(x+width+5,483,-1,-1);
             SootRule(x+7,502,width-4,hero==id);if(hero==id)DrawCircle(new Vector2(mid,522),4,Clot);
             InscribeCentered(Catalog.Heroes[id].Name.ToUpperInvariant(),mid,552,32,hero==id?Parchment:Dust);
-            InscribeCentered($"CORPO {Catalog.Heroes[id].StartingBody}   MENTE {Catalog.Heroes[id].StartingMind}",mid,584,16,InkGold);
-            var st=CombatStats100.Base(id);InscribeCentered($"ATT {st.Attack}   ARC {st.ArcaneAttack}   DIF {st.Defense}",mid,612,16,InkGold);
-            InscribeCentered($"DIF ARC {st.ArcaneDefense}   AGI {st.Agility}",mid,638,16,InkGold);
-            InscribedParagraph(Catalog.Heroes[id].Description,x+10,660,width-12,13,16,2,Dust);
+            InscribedParagraph(Catalog.Heroes[id].Description,x+10,588,width-12,17,22,4,Dust);
         }
         InscribeCentered("A / D  SCEGLI   •   INVIO  CONFERMA   •   ESC  INDIETRO",640,700,18,InkGold);
     }

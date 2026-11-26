@@ -15,3 +15,6 @@
 
 ## Regola di sviluppo
 Preservare tutte le funzionalità, gli asset e gli eventi esistenti. Modificare esclusivamente quanto richiesto. Non sostituire il sorgente con una ricostruzione non verificata. Effettuare verifiche di regressione ed esportazione quando il sorgente e le dipendenze saranno disponibili.
+
+## v10.9 — interventi mirati
+Sorgente v10.8 importato integralmente in `game/La_Terza_Campana_CSharp_v10_8/` dalla release `hhh`. Riscritte le opzioni delle prime cinque scene (effetti, indici, flag interni e parte VI invariati), nascosti i numeri nella selezione dei protagonisti, rimosso esclusivamente lo sprite della madre nella seconda scena. Il workflow `anatema-v109.yml` applica la patch ai due JPG originali e avvia i test Core; verificare il risultato prima dell'export Windows. Nessuna modifica a combattimenti, mappe, inventario o altre origini.

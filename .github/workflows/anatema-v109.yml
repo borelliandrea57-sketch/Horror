@@ -1,0 +1,47 @@
+name: Anatema v10.9 - asset e test
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/anatema-v109.yml'
+permissions:
+  contents: write
+concurrency:
+  group: anatema-v109
+  cancel-in-progress: false
+jobs:
+  artwork:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'opencv-python-headless==4.13.0.92' 'numpy<3'
+      - name: Applica patch grafica una sola volta
+        shell: bash
+        run: |
+          A='game/La_Terza_Campana_CSharp_v10_8/GodotProject/Assets'
+          if [ "$(git hash-object "$A/emile104_map_1.jpg")" != '54e0aa7ae7094865605251a43c82f0fb76c30365' ] || [ "$(git hash-object "$A/emile107_funeral.jpg")" != '30caa711d90f22e614d168dac332addd74d23d16' ]; then
+            echo 'Asset non originali: nessuna sovrascrittura.'
+            exit 0
+          fi
+          python tools/patch_anatema_v109.py "$A" "$RUNNER_TEMP/anatema"
+          cp "$RUNNER_TEMP/anatema/"*.jpg "$A/"
+          cp "$A/emile107_funeral.jpg" 'game/La_Terza_Campana_CSharp_v10_8/AssetLibrary/Sigilli/Funerale_sigillo_integrato.jpg'
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- "$A/emile104_map_1.jpg" "$A/emile107_funeral.jpg" 'game/La_Terza_Campana_CSharp_v10_8/AssetLibrary/Sigilli/Funerale_sigillo_integrato.jpg'
+          git commit -m "v10.9: culla rimossa e sigillo anticato"
+          git push origin HEAD:main
+  core-tests:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - run: dotnet run --project 'game/La_Terza_Campana_CSharp_v10_8/CoreTests/LaTerzaCampana.CoreTests.csproj' --configuration Release
